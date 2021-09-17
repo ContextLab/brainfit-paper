@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage[sort]{natbib}
@@ -14,12 +14,13 @@
 
 
 \title{Fitness tracking reveals task-specific memory effects of exercise}
-\author[1]{Jeremy R. Manning}
+\author[1, $\star$]{Jeremy R. Manning}
 \author[1,2]{Gina M. Notaro}
 \author[1]{Esme Chen}
 \author[1]{Paxton C. Fitzpatrick}
 \affil[1]{Dartmouth College, Hanover, NH}
 \affil[2]{Lockheed Martin, Bethesda, MD}
+\affil[$\star$]{Address correspondence to jeremy.r.manning@dartmouth.edu}
 
 \begin{document}
 \maketitle
@@ -28,13 +29,79 @@
 Physical excercise can benefit both physical and mental well-being.  Different forms of exercise (i.e., aerobic versus anaerobic; running versus walking versus swimming versus yoga; high-intensity interval trainiing versus endurance workouts; etc.) impact physical fitness in different ways.  For example, running may substantially impact leg and heart strength but only moderately impact arm strength. We hypothesized that the mental benefits of exercise might be similarly differentiated.  We focused specifically on how different forms of exercise might affect different aspects of memory.  To test our hypothesis, we collected nearly a century's woth of fitness data (in aggregate).  We then asked participants to engage in a battery of memory tasks that tested their short and long term episodic, semantic, and spatial memory.  We found that ??.
 \end{abstract}
 
-\section*{Introduction and overview}
+\section*{Introduction}
+
+\section*{Results}
+\begin{itemize}
+  \item exploratory analysis (correlations)
+    \begin{itemize}
+    \item Memory-memory
+    \item fitness-fitness
+    \item survey-survey
+    \item (fitness + survey)-memory
+    \end{itemize}
+  \item predictive analysis (regressions)
+    \begin{itemize}
+    \item Predict memory performance on held-out task from other tasks
+    \item Predict memory performance on each task using fitness data
+      \item Predict memory performance on each task using survey data
+      \end{itemize}
+    \item Reverse correlations
+      \begin{itemize}
+      \item Fitness profile that predicts performance on each task (barplots + timelines)
+      \item Fitness profile for each survey demographic (barplots + timelines)
+        \begin{itemize}
+          \item Select out mental health demographics (based on meds, stress levels)
+          \end{itemize}
+        \end{itemize}
+  \end{itemize}
+
+  \section*{Discussion}
+  \begin{itemize}
+  \item summarize key findings
+  \item correlation versus causation
+  \item related work (exercise/memory, exercise/mental health), what this study adds
+    \item future direction: towards customized physical exercise recommendation engine for optimizing mental health and mental fitness
+    \end{itemize}
+
+\section*{Methods}
+\subsection*{Experiment}
+\subsubsection*{Participants}
+\subsubsection*{Tasks}
+\paragraph*{Intake survey.}
+\paragraph*{Free recall.}
+\paragraph*{Naturalistic recall.}
+\paragraph*{Foreign language flashcards.}
+\paragraph*{Spatial learning.}
+
+\subsubsection*{Fitness tracking using Fitbit devices}
+
+\subsubsection*{Processing Fitbit data}
+\paragraph*{Raw metrics.}
+\paragraph*{Comparing recent versus baseline measurements.}
+
+\subsubsection*{Exploratory correlation analyses}
+\paragraph*{Imputation and interpolation of missing data.}
+
+\subsubsection*{Regression-based prediction analyses}
+
+\subsubsection*{Reverse correlation analyses}
+
+
+
 
 \section*{Acknowledgements}
+We acknowledge useful discussions with David Bucci, Emily Glasser, Andrew Heusser, Avigail Bartolome, Lorie Loeb, Lucy Owen, and Kirsten Ziman.  Our work was supported in part by the Dartmouth Young Minds and Brains initiative.  The content is solely the responsibility of the authors and does not necessarily represent the official views of our supporting organizations.  This paper is dedicated to the memory of David Bucci, who helped to inspire the theoretical foundations of this work.  Dave served as a mentor and colleague on the project prior to his passing.
 
 
 \section*{Data and code availability}
 All analysis code and data used in the present manuscript may be found \href{https://github.com/ContextLab/brainfit-paper}{\underline{here}}.
+
+\section*{Author contributions}
+Concept: J.R.M.  Implementation: G.M.N.  Analyses: G.M.N., E.C., and P.C.F.  Writing: J.R.M.
+
+\section*{Competing interests}
+The authors declare no competing interests.
 
 \bibliographystyle{apa}
 \bibliography{CDL-bibliography/cdl}
