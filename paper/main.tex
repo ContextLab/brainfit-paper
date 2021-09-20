@@ -134,6 +134,8 @@ potential associations between memory, mental health, and exercise.
     mental health, and about their performance on a battery of memory
     tasks.  We mined the dataset for potential associations between
     memory, mental health, and exercise.
+
+    
     
 \subsection*{Experiment}
 \subsubsection*{Participants}
@@ -230,10 +232,43 @@ percentile: 2).
 \subsubsection*{Tasks}
 Upon accepting the HIT posted on Mechanical Turk, the worker was
 directed to read and fill out a screening and consent form, and to
-share access to their anonymized Fitbit data via their Fitbit
-account.  After consenting to participant and successfully sharing
-their Fitbit data, participants filled out a survey and then engaged
-in a series of memory tasks.
+share access to their anonymized Fitbit data via their Fitbit account.
+After consenting to participant and successfully sharing their Fitbit
+data, participants filled out a survey and then engaged in a series of
+memory tasks (Fig.~\ref{fig:tasks}).  All stimuli and code for running
+the full Mechanical Turk experiment may be found
+\href{https://github.com/ContextLab/brainfit-task}{\underline{here}}.
+
+\begin{figure}[tp]
+\centering
+\includegraphics[width=1\textwidth]{figs/experiment}
+\caption{\textbf{Battery of memory tasks.}  \textbf{a.  Free recall.}
+Participants study 16 words (presented one at a time), followed by an
+immediate memory test where they type
+each word they remember from the just-studied list.  In the delayed
+memory test, participants type any words they remember studying, from
+any list.  \textbf{b. Naturalistic recall.}  Participants watch a
+brief video, followed by two immediate memory tests.  The first test
+asks participants to write out what happened in the video.  The second
+test has participants answer a series of multiple choice questions
+about the conceptual content of the video.  In the delayed memory
+test, participants (again) write out what happened in the video.
+\textbf{c. Foreign language flashcards.}  Participants study a
+sequence of 10 English-Gailic word pairs, each presented with an
+illustration of the given word.  During an immediate memory test,
+participants perform a multiple choice test where they select the
+Gaelic word that corresponds to the given photograph.  During the
+delayed memory test, participants perform a second multiple choice
+test, where they select the Gaelic word that corresponds to each of a
+new set of photographs.  \textbf{d. Spatial learning.}  In each trial,
+participants
+study a set of randomly positioned shapes.  Next, the shapes'
+positions are altered, and participants are asked to drag the shapes
+back to their previous positions.  \textbf{All panels.}  The gray
+numbers denote the order in which participants experienced each task
+or test.}
+\label{fig:tasks}
+\end{figure}
 
 \paragraph*{Survey questions.}  We collected the following demographic
 information from each participant: their birth year, gender, highest
@@ -244,12 +279,115 @@ and water consumption, location of their residence, activity typically
 required for their job, and exercise habits.
 
 
-\paragraph*{Free recall.}
+\paragraph*{Free recall (Fig.~\ref{fig:tasks}a).} 
+Participants studied a sequence of four word lists, each comprising 16
+words.  After studying each list, participants received an immediate
+memory test, whereby they were asked to type (one word at a time) any
+words they remembered from the just-studied list, in any order.
+
+Words were presented for 2~s each, in black text on a white
+background, followed by a 2~s blank (white) screen.  After the final
+2~s pause, participants were given 90~s to type in as many words as
+they could remember, in any order.  The memory test was constructed
+such that the participant could only see the text of the current word
+they were typing; when they pressed any non-letter key, the current
+word was submitted and the text box they were typing in was cleared.
+This was intended to prevent participants from retroactively editing
+their previous responses.
+
+The word lists participants studied were drawn from the categorized
+lists reported in \cite{ZimaEtal18}.  Each participant was assigned
+four unique randomly chosen lists (in a randomized order), selected from a full set of 16
+lists.  Each chosen list was then randomly shuffled before presenting
+the words to the participants.
+
+Participants also performed a final delayed memory test where they
+were given 180~s to type out any words they remembered from
+\textit{any} of the 4 lists they had studied.
+
+Recalled words within an edit distance of 2 (i.e., a Levenshtein Distance less
+than or equal to 2) of any word in the wordpool were ``autocorrected''
+to their nearest match.  We also manually corrected clear typos or
+mispellings by hand (e.g., we corrected ``hippoptumas'' to
+``hippopotamus'', ``zucinni'' to ``zucchini'', and so on).  Finally,
+we lemmatized each submitted word to match the plurality of the
+matching wordpool word (e.g., ``bongo'' was corrected to ``bongos'',
+and so on).  After applying these corrections, any submitted words
+that matched words presented on the just-studied list were tagged as
+``correct'' recalls, and any non-matching words were discarded as
+``errors.''  Because participants were not allowed to edit the text
+they entered, we chose not to analyze these putative ``errors,'' since
+we could not distinguish typos from true misrememberings.
+
+\paragraph*{Naturalistic recall (Fig.~\ref{fig:tasks}b).}
+Participants watched a 2.5~minute video clip entitled ``The Temple of
+Knowledge.''  The video comprises an animated story told to StoryCorps
+by Ronald Clark, who was interviewed by his daughter, Jamilah Clark.
+The narrator (Ronald) discusses growing up living in an apartment over Washington
+Heights branch of the New York Public Library, where his father worked
+as a custodian during the 1940s.
+
+After watching the video clip, participants were asked to type out
+anything they remembered about what happened in the video.  They typed
+their responses into a text box, one sentence at a time.  When the
+participant pressed the return key or typed any final punctuation mark
+(``.'', ``!'', or ``?'') the text currently entered into the box was
+``submitted'' and added to their transcript, and the text box was
+cleared to prevent further editing of any already-submitted text.
+This was intended to prevent participants from retroactively editing
+their previous responses.  Participants were given up to 10~minutes to
+enter their responses.  After 4~minutes participants were given the
+option of ending the response period early, e.g., if they felt they had finished
+entering all of the information they remembered.  Each participant's
+transcript was constructed from their submitted responses by combining
+the sentences into a single document and removing extraneous
+whitespace characters.
+
+Following this 4--10 minute free response period, participants were
+given a series of 10 multiple choice questions about the conceptual
+content of the story.  All participants received the same questions,
+in the same order.
+
+Participants also performed a final delayed memory test, where they
+carried out the free response recall task a second time, near the end
+of the testing session.  This resulted in a second transcript, for
+each participant.
+
+\paragraph*{Foreign language flashcards (Fig.~\ref{fig:tasks}c).}
+Participants studied a series of 10 English-Gaelic word pairs in a
+randomized order.  We selected the Gaelic language both for its
+relatively small number of native speakers and for its dissimilarity
+to other commonly spoken languages amongst Mechanical Turk Workers.
+We verified (via self report) that all of our participants were fluent in English and
+that they were neither fluent nor familiar with Gaelic.
+
+Each word's ``flashcard'' comprised a cartoon
+depicting the given word, the English word or phrase in lowercase text (e.g., ``the
+boy''), and the Gaelic word or phrase in uppercase text (e.g.,
+``BUACHAILL'').   Each
+flashcard was displayed for 4~s, followed by a 3~s interval (during
+which the screen was cleared) prior to the next flashcard
+presentation.
+
+After studying all 10 flashcards, participants were given a multiple
+choice memory test where they were shown a series of novel
+photographs, each depicting one of the 10 words they had learned.
+They were asked to select which (of 4 unique options) Gaelic word went with
+the given picture.  The 3 incorrect options were selected at random
+(with replacement across trials), and the order in which the choices
+appeared to the participant were also randomized.  Each of the 10
+words they had learned were tested exactly once.
+
+Participants also performed a final delayed memory test, where they
+were given a second set of 10 questions (again, one per word they had
+studied).  For this second set of questions participants were prompted
+with a new set of novel photographs, and new randomly chosen incorrect
+choices for each question.  Each of the 10 original words they had
+learned were (again) tested exactly once during this final memory test.
 
 
-\paragraph*{Naturalistic recall.}
-\paragraph*{Foreign language flashcards.}
-\paragraph*{Spatial learning.}
+
+\paragraph*{Spatial learning (Fig.~\ref{fig:tasks}d).}
 
 \subsubsection*{Fitness tracking using Fitbit devices}
 
