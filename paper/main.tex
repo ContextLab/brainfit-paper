@@ -518,13 +518,45 @@ We were interested in separating out potential associations between
 \textit{absolute} fitness metrics and \textit{relative} metrics.  To
 this end, in addition to assessing potential raw
 (absolute) fitness metrics, we also defined a simple measure of recent
-changes in those metrics, relative to a baseline.  We 
-
-In order to study 
+changes in those metrics, relative to a baseline:
+\[
+  \Delta_{R, B} m = \frac{\frac{1}{R} \sum_{i = 1}^R
+  m(i)}{\frac{1}{B} \sum_{i=R + 1}^{R+B}m(i)},
+\]
+where $m(i)$ is the value of metric $m$ from $i - 1$ days prior to testing (e.g.,
+$m(1)$ represents the value of $m$ on the day the participant accepted
+the HIT, and $m(10)$ represents the value of $m$ 9 days prior to
+accepting the HIT.  Unless otherwise noted, we set $R = 7$ and $B =
+30$.  In other words, to estimate recent changes in any metric $m$, we
+divided the average value of $m$ taken over the prior week by the
+average value of $m$ taken over the 30 days before that.
 
 
 \subsubsection*{Exploratory correlation analyses}
-\paragraph*{Imputation and interpolation of missing data.}
+We used a bootsrap procedure to identify reliable correlations between
+different memory-related, fitness-related, and demographic-related
+variables.  For each of $N = 1000$ iterations, we selected (with
+replacement) a sample of 113 participants to include.  This yielded,
+for each iteration, a sampled ``data matrix'' with one row per sampled
+participant and one column for each measured variable.  When
+participants were sampled multiple times in a given iteration, as was
+often the case, this matrix contained duplicate rows.  We used a
+round-robin imputation procedure to estimate the values of any missing
+features~\citep{Buck60}.  Next, we computed the Pearson's correlation
+between each pair of columns.  This yielded, for each pair of columns,
+a distribution of $N$ bootstrapped correlation coefficients.  If fewer
+than $95\%$ of the coefficients for a given pair of columns had the
+same sign, we excluded the pair from further analysis and considered
+the expected correlation between those columns to be undefined.  If
+$\geq 95\%$ of the coefficients for a given pair of columns had the
+same sign, we computed the expected correlation coefficient as:
+\[
+  \mathbb{E}_{i, j}\left[ r\right] = \tanh\left(\frac{1}{N} \sum_{n=1}^N
+  \tanh^{-1}(\mathrm{corr}\left(m(i)_n, m(j)_n\right))\right),
+\]
+where $m(x)_n$ represents column $x$ of the bootstrapped data matrix
+for iteration $n$, $\tanh$ is the hyperbolic tangent, and $\tanh^{-1}$
+is the inverse hyperbolic tangent.
 
 \subsubsection*{Regression-based prediction analyses}
 
