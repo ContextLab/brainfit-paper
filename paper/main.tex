@@ -429,7 +429,24 @@ study-test trials of this spatial learning task (3 trials for each of 2, 3,
 
 
 \subsubsection*{Fitness tracking using Fitbit devices}
+To gain access to our study, participants provided us with access to
+all data associated with their Fitbit account from the
+year (365 calendar days) up to and including the day they accepted the
+HIT.  We filtered out all identifiable information (e.g., participant names, GPS
+coordinates, etc.) prior to importing their data.
 
+\subsubsection*{Collecting and processing Fitbit data}
+
+The fitness
+tracking data associated with participants' Fitbit accounts varied in
+scope and duration
+according to which device the participant owned (Fig.~\ref{fig:devices}), how often the
+participant wore (and/or synced) their tracking device, and how long they had owned their
+device.  For example, while all participants' devices supported basic
+activity metrics such as daily step counts, only a subset of the
+devices with heart rate monitoring capabilities provided information
+about workout intensity, resting heart rate, and other related
+measures.
 
 \begin{figure}[t]
 \centering
@@ -444,9 +461,67 @@ study-test trials of this spatial learning task (3 trials for each of 2, 3,
 \label{fig:devices}
 \end{figure}
 
-\subsubsection*{Processing Fitbit data}
-\paragraph*{Raw metrics.}
-\paragraph*{Comparing recent versus baseline measurements.}
+Across all devices, we collected the following information: heart
+rate data, sleep tracking data, logged bodyweight measurements, logged
+nutrition measurements, Fitbit account and device settings, and
+activity metrics.
+
+\paragraph{Heart rate.}  If available, we extracted all
+heart rate data collected by participants' Fitbit device(s) and associated with
+their Fitbit profile.  Depending on the specific device model(s) and
+settings, this included second-by-second, minute-by-minute, daily
+summary, weekly summary, and/or monthly summary heart rate
+information.  These summaries include information about participants' average
+heart rates, and the amount of time they were estimated to have spent in
+different ``heart rate zones'' (rest, out-of-range, fat burn, cardio, or
+peak, as defined by their Fitbit profile), as well as an estimate of the number of estimated calories
+burned while in each heart rate zone.
+
+\paragraph{Sleep.}  If available, we extracted all sleep data collected
+by participants' Fitbit device(s).  Depending on the specific device
+model(s) and settings, this included nightly estimates of the duration
+and quality of sleep, as well as the amount of time spent in each
+sleep stage (awake, REM, light, or deep).
+
+\paragraph{Weight.}  If available, we extracted any weight-related
+information affiliated with particiants' Fitbit accounts within 1 year
+prior to enrolling in our study.  Depending on their specific device model(s) and
+settings, this included their weight, body mass index, and/or body fat
+percentage.
+
+\paragraph{Nutrition.} If available, we extracted any nutrition-related
+information affiliated with particiants' Fitbit accounts within 1 year
+prior to enrolling in our study. Depending on their specific account
+settings and usage behaviors, this
+included a log of the specific foods they had eaten (and logged)
+over the past year, and the amount of water consumed each day.
+
+\paragraph{Account and device settings.}  We extracted any settings
+associated with participants' Fitbit accounts to determine (a) which
+device(s) and model(s) are associated with their Fitbit account, (b)
+time(s) when their device(s) were last synced, and (c) battery
+level(s).
+
+\paragraph{Activity metrics.}  If available, we extracted any
+activity-related information affiliated with particiants' Fitbit
+accounts within 1 year prior to enrolling in our study.  Depending on
+their specific device model(s) and settings, this included: daily step
+counts; daily amount of time spent in each activity level (sedentary,
+lightly active, fairly active, or very active, as defined by their
+account settings and preferences); daily number of floors climbed;
+daily elevation change; and daily total distance traveled.
+
+
+
+\subsubsection*{Comparing recent versus baseline measurements.}
+We were interested in separating out potential associations between
+\textit{absolute} fitness metrics and \textit{relative} metrics.  To
+this end, in addition to assessing potential raw
+(absolute) fitness metrics, we also defined a simple measure of recent
+changes in those metrics, relative to a baseline.  We 
+
+In order to study 
+
 
 \subsubsection*{Exploratory correlation analyses}
 \paragraph*{Imputation and interpolation of missing data.}
