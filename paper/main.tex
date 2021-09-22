@@ -559,6 +559,55 @@ for iteration $n$, $\tanh$ is the hyperbolic tangent, and $\tanh^{-1}$
 is the inverse hyperbolic tangent.
 
 \subsubsection*{Regression-based prediction analyses}
+Following our exploratory correlation analyses, we used an analogous
+bootstrap procedure to identify subsets of memory-related,
+fitness-related, and demographic-related variables that predicted
+(non-overlapping) subsets of other variables.  For example, we tested
+whether a combination of fitness-related variables could predict a
+combination of memory-related variables, and so on.
+
+We used the same bootstrap procedure described above (used in our
+exploratory correlation analyses) to generate $N = 1000$ bootstrapped
+data matrices whose rows reflected sampled participants and whose
+columns reflected different measured variables.
+
+We grouped variables according to whether they were memory-related,
+fitness-related, or demographic-related.  For each bootstrap
+iteration, we divided the rows of that iterations data matrix into
+training and test sets.  The assignments of rows to these two sets was
+random, subject to the constraint that any duplicated rows in the data
+matrix (i.e., reflecting a single participant who had been sampled
+multiple times) was always assigned to either the training \textit{or}
+the test set--i.e., duplicated rows could not appear in both the
+training and the test sets.  The training sets always comprised 75\%
+of the data, and the tests sets comprised the remaining 25\% of the
+data.
+
+Next, we fit a series of ridge regression models to the training
+data.  Specifically, for each pairing of memory, fitness, and
+demographic variables, we fit a single ridge regression model treating
+the first variable group as the input features and the second variable
+group as the target features.  For example, one regression model used
+memory variables to predict fitness variables, and another regression
+model used fitness variables to predict demographic variables, and so
+on.  In total we fit six regression models to each training dataset.
+We then applied the fitted models to the held-out test dataset and
+computed the root mean squared deviation (RMSD) between the predicted and
+observed values in the target features of the test dataset.  We also
+examined the regression weights assigned to each input feature.  This
+yielded, for each regression model (across $N$ bootstrap iterations) a
+distribution of RMSD values and a distribution of weights for each
+input variable.
+
+We constructed a ``null'' distribution by using the same procedure as above,
+but where the columns in the test datasets were randomly permuted with
+each iteration (thereby breaking any meaningful predictive information
+between the training and test data).  We assessed the statistical
+significance ($p$-values) of the observed RMSD values by computing the proportions
+of null RMSD values that were less than the observed value.  We also
+assessed the significance of the observed regression weights using
+$t$-tests to compare the means of the observed versus null
+distributions of weights.
 
 \subsubsection*{Reverse correlation analyses}
 
