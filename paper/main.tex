@@ -12,7 +12,6 @@
 \doublespacing
 \linenumbers
 
-
 \title{Fitness tracking reveals task-specific associations between
   memory, mental health, and exercise}
 \author[1, $\star$]{Jeremy R. Manning}
@@ -106,7 +105,7 @@ potential associations between memory, mental health, and exercise.
     \item Foreign language flashcards: p(correct) by activity level
       \item Spatial learning: mean error by number of shapes
       \end{itemize}
-    \item Fitness info (break down by task performance, potentiall
+    \item Fitness info (break down by task performance, potentially
       separately for each task); also separate out recent (raw) and recent versus baseline
       \begin{itemize}
       \item activity (steps, zone minutes, floors/elevation)
@@ -273,7 +272,7 @@ test has participants answer a series of multiple choice questions
 about the conceptual content of the video.  In the delayed memory
 test, participants (again) write out what happened in the video.
 \textbf{c. Foreign language flashcards.}  Participants study a
-sequence of 10 English-Gailic word pairs, each presented with an
+sequence of 10 English-Gaelic word pairs, each presented with an
 illustration of the given word.  During an immediate memory test,
 participants perform a multiple choice test where they select the
 Gaelic word that corresponds to the given photograph.  During the
@@ -327,7 +326,7 @@ were given 180~s to type out any words they remembered from
 Recalled words within an edit distance of 2 (i.e., a Levenshtein Distance less
 than or equal to 2) of any word in the wordpool were ``autocorrected''
 to their nearest match.  We also manually corrected clear typos or
-mispellings by hand (e.g., we corrected ``hippoptumas'' to
+misspellings by hand (e.g., we corrected ``hippoptumas'' to
 ``hippopotamus'', ``zucinni'' to ``zucchini'', and so on).  Finally,
 we lemmatized each submitted word to match the plurality of the
 matching wordpool word (e.g., ``bongo'' was corrected to ``bongos'',
@@ -484,13 +483,13 @@ and quality of sleep, as well as the amount of time spent in each
 sleep stage (awake, REM, light, or deep).
 
 \paragraph{Weight.}  If available, we extracted any weight-related
-information affiliated with particiants' Fitbit accounts within 1 year
+information affiliated with participants' Fitbit accounts within 1 year
 prior to enrolling in our study.  Depending on their specific device model(s) and
 settings, this included their weight, body mass index, and/or body fat
 percentage.
 
 \paragraph{Nutrition.} If available, we extracted any nutrition-related
-information affiliated with particiants' Fitbit accounts within 1 year
+information affiliated with participants' Fitbit accounts within 1 year
 prior to enrolling in our study. Depending on their specific account
 settings and usage behaviors, this
 included a log of the specific foods they had eaten (and logged)
@@ -503,7 +502,7 @@ time(s) when their device(s) were last synced, and (c) battery
 level(s).
 
 \paragraph{Activity metrics.}  If available, we extracted any
-activity-related information affiliated with particiants' Fitbit
+activity-related information affiliated with participants' Fitbit
 accounts within 1 year prior to enrolling in our study.  Depending on
 their specific device model(s) and settings, this included: daily step
 counts; daily amount of time spent in each activity level (sedentary,
@@ -520,8 +519,8 @@ this end, in addition to assessing potential raw
 (absolute) fitness metrics, we also defined a simple measure of recent
 changes in those metrics, relative to a baseline:
 \[
-  \Delta_{R, B} m = \frac{\frac{1}{R} \sum_{i = 1}^R
-  m(i)}{\frac{1}{B} \sum_{i=R + 1}^{R+B}m(i)},
+  \Delta_{R, B} m = \frac{B \sum_{i = 1}^R
+  m(i)}{R \sum_{i=R + 1}^{R+B}m(i)},
 \]
 where $m(i)$ is the value of metric $m$ from $i - 1$ days prior to testing (e.g.,
 $m(1)$ represents the value of $m$ on the day the participant accepted
@@ -533,7 +532,7 @@ average value of $m$ taken over the 30 days before that.
 
 
 \subsubsection*{Exploratory correlation analyses}
-We used a bootsrap procedure to identify reliable correlations between
+We used a bootstrap procedure to identify reliable correlations between
 different memory-related, fitness-related, and demographic-related
 variables.  For each of $N = 1000$ iterations, we selected (with
 replacement) a sample of 113 participants to include.  This yielded,
@@ -610,8 +609,69 @@ $t$-tests to compare the means of the observed versus null
 distributions of weights.
 
 \subsubsection*{Reverse correlation analyses}
+We sought to characterize potential associations between the history
+of participants' fitness-related activities leading up to the time
+they participated in a memory task and their performance on the given
+task.  For each fitness-related variable, we constructed a timeseries
+matrix whose rows corresponded to timepoints (sampled once per day)
+leading up to the day the participant accepted the HIT for our study,
+and whose columns corresponded to different participants.  These
+matrices often contained missing entries, since different
+participants' Fitbit devices tracked fitness-related activities
+differently.  For example, participants whose Fitbit devices lacked
+heart rate sensors would have missing entries for any heart
+rate-related variables.  Or, if a given participant neglected to wear
+their fitness tracker on a particular day, the column corresponding to
+that participant would have missing entries for that day.
+
+In addition to this set of matrices storing timeseries data for each
+fitness-related variable, we also constructed a memory performance
+matrix, $M$, whose rows corresponded to different memory-related variables,
+and whose columns corresponded to different participants.  For
+example, one row of the memory performance matrix reflected the
+average proportion of words (across lists) that each
+participant remembered during the immediate free recall test, and so
+on.
+
+Given a fitness timeseries matrix, $F$, we computed the weighted
+average and weighted standard error of the mean of each row of $F$,
+where the weights were given by a particular memory-related variable
+(row of $M$).  For example, if $F$ contained participants' daily step
+counts, we could use any row of $M$ to compute a weighted average
+across any participants who contributed step count data on each day.
+Choosing a row of $M$ that corresponded to participants' performance
+on the naturalistic recall task would mean that participants who
+performed better on the naturalistic recall task would contribute more
+to the weighted average timeseries of daily step counts.
+Specifically, for each row, $t$, of $F$, we computed the weighted
+average (across the $S$ participants)  as:
+\[
+\bar{f}(t) = \sum_{s=1}^S \dot{m}(s) F(t, s),
+\]
+where $\dot{m}$ denotes the normalized min-max scaling of $m$ (the row of $M$
+corresponding to the chosen memory-related variable):
+\[
+  \dot{m} = \frac{m}{\sum_{s=1}^S \hat{m}(s)},
+\]
+where
+\[
+  \hat{m} = \frac{m - \min(m)}{\max(m) - \min(m)}
+\]
 
 
+We computed the weighted standard error of the mean as:
+\[
+\mathrm{SEM}_m\left(f(t)\right) = \frac{\left| \sum_{s=1}^S \left( F(t, s) -
+    \bar{f}(t)\right) \right|}{\sqrt{S}}.
+\]
+
+When a given row of $F$ was missing data from one or more
+participants, those participants were excluded from the weighted
+average for the corresponding timepoint and the weights (across all
+remaining participants) were re-normalized to sum to 1.
+The above procedure yielded, for each memory
+variable, a timeseries of average (and standard error of the mean)
+fitness tracking values leading up to the day of the experiment.
 
 
 \section*{Acknowledgements}
