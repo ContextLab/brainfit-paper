@@ -123,7 +123,8 @@ mental health or exercise.
       movie/recall trajectories (color: mean precision)
     \item Foreign language flashcards (immediate + delayed): p(correct) histogram (color: p(correct))
       \item Spatial learning: mean error by number of shapes (color:
-        slope of line fit to errors as a function of the number of shapes)
+        slope of line fit to errors as a function of the number of
+        shapes)
       \end{itemize}
     \item Fitness info (break down by task performance, potentially
       separately for each task); also separate out recent (raw) and
@@ -134,7 +135,11 @@ mental health or exercise.
       \item resting heart rate
         \item sleep
         \end{itemize}
-  \item exploratory analysis (correlations)
+  \item exploratory analysis (correlations).  Possibly make some sort of scatter matrix or pairplot-- rows/columns:
+          tasks.  Diagonal: histogram of performance metric for that
+          task.  Above-diagonal entries: compare performance across
+          tasks (by subject).  Below-diagonal entries: empty?
+          density/2d histograms?
     \begin{itemize}
     \item Memory-memory
     \item fitness-fitness
@@ -148,7 +153,7 @@ mental health or exercise.
       \item Predict memory performance on each task using survey data
       \end{itemize}
     \item Reverse correlations: look at recent changes versus baseline
-      trends (color using same scheme as behavior figure)
+      trends (color using same scheme as behavior figures).  Possibly 
       \begin{itemize}
       \item Fitness profile that predicts performance on each task (barplots + timelines)
       \item Fitness profile for each survey demographic (barplots + timelines)
