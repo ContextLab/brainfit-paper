@@ -24,10 +24,16 @@
   jeremy.r.manning@dartmouth.edu}
 
 
-\newcommand{\frDetail}{S1}
-\newcommand{\natDetail}{S2}
-\newcommand{\vocabDetail}{S3}
-\newcommand{\spatialDetail}{S4}
+\newcommand{\devices}{S1}
+\newcommand{\frDetail}{S2}
+\newcommand{\natDetail}{S3}
+\newcommand{\vocabDetail}{S4}
+\newcommand{\spatialDetail}{S5}
+\newcommand{\fitDists}{S6}
+\newcommand{\fitDistgridImmediate}{S7}
+\newcommand{\fitScatterImmediate}{S8}
+\newcommand{\fitDistgridDelayed}{S9}
+\newcommand{\fitScatterDelayed}{S10}
 
 
 \begin{document}
@@ -99,131 +105,7 @@ battery of memory tasks, which we used to evaluate their memory
 performance along several dimensions.  We examined the data for
 potential associations between memory, mental health, and exercise.
 
-\section*{Results}
-Before testing our main hypothesis we examined the behavioral data
-from each of four memory tasks: a random word list learning ``free
-recall'' task; a naturalistic recall task whereby participants watched
-a short video and then recounted the narrative; a foreign language
-``flashcards'' task; and a spatial learning task.  Each of the first
-three tasks (free recall, naturalistic recall, and the flashcards
-task) included both an immediate (short term) memory test and a
-delayed (long term) memory test.  The spatial learning task included
-only an immediate test. Participants in all four tasks exhibited
-general trends and tendancies that have been previously reported in
-prior work.  We were also interested in characterizing the variability
-in task performance across participants.  For example, if all
-participants exhibited near-identical behaviors or performance on a
-given task, we would be unable to identify how memory performance on
-that task varied with mental health or exercise.
-
-When participants engaged in free recall of random word lists, they
-displayed strong primacy and recency effects~\citep{Murd62a} on the
-immediate memory tests (as reflected by improved memory for early and
-late list items; Fig.~\ref{fig:immediate_behavior}a, left and right
-panels).  On the delayed memory test, the recency effect was
-substantially diminished (Fig.~\ref{fig:delayed_behavior}a, left and
-right panels), consistent with myriad previous studies~\citep[for
-review see][]{Kaha12}.  Participants also tended to cluster their
-recalls according to the words' study positions~\citep{Kaha96} on both
-the immediate (Fig.~\ref{fig:immediate_behavior}a, middle panel) and
-delayed (Fig.~\ref{fig:delayed_behavior}a, middle panel) memory tests.
-
-When participants engaged in naturalistic recall by recounting the
-narrative of a short story video, they reliably and accurately
-remembered the major narrative events on both the immediate
-(Fig.~\ref{fig:immediate_behavior}b) and delayed
-(Fig.~\ref{fig:delayed_behavior}b) tests.  This is consistent with
-prior work showing that memory for rich narratives is both detailed
-and accurate~\citep{HeusEtal21, ChenEtal17}.
-
-Performance on the foreign language flashcards task (immediate:
-Fig.~\ref{fig:immediate_behavior}c; delayed:
-Fig.~\ref{fig:delayed_behavior}c) varied substantially across
-participants, and did not show any clear serial position effects.
-Participants also displayed substantial variation in performance on
-the spatial learning task (Fig.~\ref{fig:immediate_behavior}d).  In
-general, participants reported the shape's positions more accurately
-when there were fewer shapes.  However, both the baseline estimation accuracy and
-the rate of decrease in accuracy as a function of increasing number of
-memorized locations varied substantially across participants.
-
-\begin{figure}[tp]
-\centering
-\includegraphics[width=1\textwidth]{figs/behavior_overview_immediate}
-\caption{\textbf{Immediate memory tests.}}
-\label{fig:immediate_behavior}
-\end{figure}
-
-\begin{figure}[tp]
-\centering
-\includegraphics[width=1\textwidth]{figs/behavior_overview_delayed}
-\caption{\textbf{Delayed memory tests.}}
-\label{fig:delayed_behavior}
-\end{figure}
-
-\begin{itemize}
-\item characterizing behaviors (color by quartile and continue the
-  color scheme in later figures-- hue reflects task, shading reflects
-  performance.  white outline means immediate, black outline means delayed)
-  \begin{itemize}
-  \item Free recall (immediate + delayed): pfr, lag-CRP, spc  (color:
-    recall performance).  
-    Figure~\ref{fig:fr_behavioral}.
-    \item Naturalistic recall (immediate + delayed): reproduce a version of the sherlock
-      movie/recall trajectories (color: mean precision).  Figure~\ref{fig:nat_behavioral}.
-    \item Foreign language flashcards (immediate + delayed):
-      p(correct) histogram (color: p(correct)).  Figure~\ref{fig:vocab_behavioral}.
-      \item Spatial learning: mean error by number of shapes (color:
-        intercept and slope of line fit to errors as a function of the number of
-        shapes).  Figure~\ref{fig:spatial_behavioral}.
-      \end{itemize}
-    \item Fitness info (break down by task performance, potentially
-      separately for each task); also separate out recent (raw) and
-      recent versus baseline -- color using same color scheme as
-      behavior figure
-      \begin{itemize}
-      \item activity (steps, zone minutes, floors/elevation)
-      \item resting heart rate
-        \item sleep
-        \end{itemize}
-  \item exploratory analysis (correlations).  Possibly make some sort of scatter matrix or pairplot-- rows/columns:
-          tasks.  Diagonal: histogram of performance metric for that
-          task.  Above-diagonal entries: compare performance across
-          tasks (by subject).  Below-diagonal entries: empty?
-          density/2d histograms?
-    \begin{itemize}
-    \item Memory-memory
-    \item fitness-fitness
-    \item survey-survey
-    \item (fitness + survey)-memory
-    \end{itemize}
-  \item predictive analysis (regressions)
-    \begin{itemize}
-    \item Predict memory performance on held-out task from other tasks
-    \item Predict memory performance on each task using fitness data
-      \item Predict memory performance on each task using survey data
-      \end{itemize}
-    \item Reverse correlations: look at recent changes versus baseline
-      trends (color using same scheme as behavior figures).  Possibly 
-      \begin{itemize}
-      \item Fitness profile that predicts performance on each task (barplots + timelines)
-      \item Fitness profile for each survey demographic (barplots + timelines)
-        \begin{itemize}
-          \item Select out mental health demographics (based on meds, stress levels)
-          \end{itemize}
-        \end{itemize}
-  \end{itemize}
-
-  \section*{Discussion}
-  \begin{itemize}
-  \item summarize key findings
-  \item correlation versus causation
-         \item what can vs. can't we know?  we can identify correlations, but not causal direction-- e.g. we cannot know whether exercise \textit{causes} mental changes versus whether people with particular neural profiles might tend to engage in particular exercise behaviors.  that being said, we \textit{can} separate out baseline tendencies (e.g., how people tend to exercise in general) versus recent changes (e.g., how they happened to have exercised prior to the experiment).
-  \item related work (exercise/memory, exercise/mental health), what this study adds
-    \item future direction: towards customized physical exercise recommendation engine for optimizing mental health and mental fitness
-    \end{itemize}
-
-    \section*{Methods}
+ \section*{Methods}
 
     We ran an online experiment using the Amazon Mechanical Turk
     platform.  We collected data about each participant's fitness and
@@ -517,7 +399,7 @@ GPS coordinates, etc.) prior to importing their data.
 
 The fitness tracking data associated with participants' Fitbit
 accounts varied in scope and duration according to which device the
-participant owned (Fig.~\ref{fig:devices}), how often the participant
+participant owned (Fig.~\devices), how often the participant
 wore (and/or synced) their tracking device, and how long they had
 owned their device.  For example, while all participants' devices
 supported basic activity metrics such as daily step counts, only a
@@ -525,18 +407,6 @@ subset of the devices with heart rate monitoring capabilities provided
 information about workout intensity, resting heart rate, and other
 related measures.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.6\textwidth]{figs/devices}
-\caption{\textbf{Fitbit devices.}  The bars indicate the numbers of
-  participants whose fitness tracking data came from each model of
-  Fitbit device.  ``MobileTrack'' refers to participants who used
-  smartphone accelerometer information to track their activity via the
-  Fitbit smartphone app.
-  ``Unknown''  denotes participants whose device information was not
-  available from their available Fitbit data.}
-\label{fig:devices}
-\end{figure}
 
 Across all devices, we collected the following information: heart rate
 data, sleep tracking data, logged bodyweight measurements, logged
@@ -751,6 +621,207 @@ remaining participants) were re-normalized to sum to 1.  The above
 procedure yielded, for each memory variable, a timeseries of average
 (and standard error of the mean) fitness tracking values leading up to
 the day of the experiment.
+
+\section*{Results}
+Before testing our main hypothesis we examined the behavioral data
+from each of four memory tasks: a random word list learning ``free
+recall'' task; a naturalistic recall task whereby participants watched
+a short video and then recounted the narrative; a foreign language
+``flashcards'' task; and a spatial learning task.  Each of the first
+three tasks (free recall, naturalistic recall, and the flashcards
+task) included both an immediate (short term) memory test and a
+delayed (long term) memory test.  The spatial learning task included
+only an immediate test. Participants in all four tasks exhibited
+general trends and tendancies that have been previously reported in
+prior work.  We were also interested in characterizing the variability
+in task performance across participants.  For example, if all
+participants exhibited near-identical behaviors or performance on a
+given task, we would be unable to identify how memory performance on
+that task varied with mental health or exercise.
+
+When participants engaged in free recall of random word lists, they
+displayed strong primacy and recency effects~\citep{Murd62a} on the
+immediate memory tests (as reflected by improved memory for early and
+late list items; Fig.~\ref{fig:immediate_behavior}a, left and right
+panels).  On the delayed memory test, the recency effect was
+substantially diminished (Fig.~\ref{fig:delayed_behavior}a, left and
+right panels), consistent with myriad previous studies~\citep[for
+review see][]{Kaha12}.  Participants also tended to cluster their
+recalls according to the words' study positions~\citep{Kaha96} on both
+the immediate (Fig.~\ref{fig:immediate_behavior}a, middle panel) and
+delayed (Fig.~\ref{fig:delayed_behavior}a, middle panel) memory tests.
+
+When participants engaged in naturalistic recall by recounting the
+narrative of a short story video, they reliably and accurately
+remembered the major narrative events on both the immediate
+(Fig.~\ref{fig:immediate_behavior}b) and delayed
+(Fig.~\ref{fig:delayed_behavior}b) tests.  This is consistent with
+prior work showing that memory for rich narratives is both detailed
+and accurate~\citep{HeusEtal21, ChenEtal17}.
+
+Performance on the foreign language flashcards task (immediate:
+Fig.~\ref{fig:immediate_behavior}c; delayed:
+Fig.~\ref{fig:delayed_behavior}c) varied substantially across
+participants, and did not show any clear serial position effects.
+Participants also displayed substantial variation in performance on
+the spatial learning task (Fig.~\ref{fig:immediate_behavior}d).  In
+general, participants reported the shape's positions more accurately
+when there were fewer shapes.  However, both the baseline estimation accuracy and
+the rate of decrease in accuracy as a function of increasing number of
+memorized locations varied substantially across participants.
+
+\begin{figure}[tp]
+\centering
+\includegraphics[width=1\textwidth]{figs/behavior_overview_immediate}
+\caption{\textbf{Immediate memory tests.}  \textbf{a. Free recall.}
+  Left: probability of recalling each word first as a function of its
+  presentation position.  Middle: probability of transitioning between
+successively recalling the word presented at position $i$, followed by
+word presented at position $i + \mathrm{Lag}$.  Right: probability of
+recalling each word as a function of its presentation position.  See
+Figure~\frDetail~for additional details.
+\textbf{b. Naturalistic recall.}  Top: 2D embedding of a 2.5~min video
+clip; each dot reflects a narrative event (red denotes early events
+and blue denotes later events).  Bottom: 2D embedding of the averaged
+transcripts of participants' recountings of the narrative (dots: same
+format as top panel).  The arrows denote the average trajectory
+directions through the corresponding region of text embedding space,
+for any participants whose recountings passed through that region.
+Blue arrows denote statistically reliable agreement across
+participants ($p < 0.05$, corrected).  See Figure~\natDetail~for
+additional details.  \textbf{c. Foreign language
+  flashcards.} Each bar denotes the average proportion of correctly
+recalled Gaelic-English word pairs from early (first 3), late (last
+3), or all (i.e., all 10) study positions.  See
+Figure~\vocabDetail~for additional details.\textbf{d. Spatial
+  learning.}  Average estimation error in shape locations as a
+function of the number of shapes.  See Figure~\spatialDetail~for
+additional details.  All panels: error bars and error
+ribbons denote bootstrap-estimated 95\% confidence intervals.  Shading
+(saturation) denotes results for different subsets of participants
+assigned based on their task performance (Figs.~\frDetail,
+\natDetail, \vocabDetail, and \spatialDetail~provide information about
+which performance metrics and values the shading reflects; in general
+more saturated colors denote participants who performed better on the
+given task.)  In Panel d, participants are grouped in two ways; in the
+left panel, participants are grouped according to the $y$-intercepts of regression lines (estimation error as a
+function of the number of shapes); in the right panel, participants
+are grouped according to the slopes of the same regression lines.}
+\label{fig:immediate_behavior}
+\end{figure}
+
+\begin{figure}[tp]
+\centering
+\includegraphics[width=1\textwidth]{figs/behavior_overview_delayed}
+\caption{\textbf{Delayed memory tests.}  \textbf{a.  Free recall.}
+  These panels are in the same format as
+  Figure~\ref{fig:immediate_behavior}a, but they reflect performance
+  on the delayed free recall task.  For additional details see
+  Figure~\frDetail.  \textbf{b. Naturalistic recall.}  These panels
+  are in the same format as Figure~\ref{fig:immediate_behavior}b, but
+  the right panel reflects performance on the delayed naturalistic
+  recall task.  For additional details see Figure~\natDetail.
+  \textbf{c. Foreign language flashcards.} This panel is in the same
+  format as Figure~\ref{fig:immediate_behavior}c, but it reflects
+  performance on the delayed flashcards test.  For additional details
+  see Figure~\vocabDetail.}
+\label{fig:delayed_behavior}
+\end{figure}
+
+In addition to observing substantial across-participant variability in
+memory performance, we also observed substantial variability in
+participants' fitness and activity metrics
+(Fig.~\ref{fig:fitness_summary}).  We examined recent measurements,
+averaged over the week prior to testing
+(Fig.~\ref{fig:fitness_summary}a), baselined measurements (average
+over the prior week, divided by the average over the preceding 30 day;
+Fig.~\ref{fig:fitness_summary}b), along with more gradually varying
+measures that tended to remain relatively static over timescales of
+weeks to months (Fig.~\ref{fig:fitness_summary}c).
+Figure~\fitDists~displays across-participant
+distributions for a broad selection of these measures, and Figures~\fitDistgridImmediate,
+\fitScatterImmediate, \fitDistgridDelayed, and \fitScatterDelayed~show
+different participants' fitness metrics, broken down by their
+performance on different memory tasks.
+
+\begin{figure}[tp]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/fitness_distributions_summary}
+\caption{\textbf{Fitness measures.}  \textbf{a. Recent measures.}
+  Resting heart rate (HR) and daily step counts, averaged over the
+  week prior to testing.  \textbf{Baseline-normalized measures.}
+  Resting heart rate and daily step counts averaged over the week
+  prior to testing, divided by the average resting heart rate and step
+counts averaged over the preceding month.  \textbf{Static measures.}
+Body mass index (BMI), body fat percentage, and weight (in kg).  For
+more information see Figures~\fitDists, \fitDistgridImmediate,
+\fitScatterImmediate, \fitDistgridDelayed, and \fitScatterDelayed.}
+\label{fig:fitness_summary}
+\end{figure}
+
+\begin{itemize}
+% \item characterizing behaviors (color by quartile and continue the
+%   color scheme in later figures-- hue reflects task, shading reflects
+%   performance.  white outline means immediate, black outline means delayed)
+%   \begin{itemize}
+%   \item Free recall (immediate + delayed): pfr, lag-CRP, spc  (color:
+%     recall performance).  
+%     Figure~\ref{fig:fr_behavioral}.
+%     \item Naturalistic recall (immediate + delayed): reproduce a version of the sherlock
+%       movie/recall trajectories (color: mean precision).  Figure~\ref{fig:nat_behavioral}.
+%     \item Foreign language flashcards (immediate + delayed):
+%       p(correct) histogram (color: p(correct)).  Figure~\ref{fig:vocab_behavioral}.
+%       \item Spatial learning: mean error by number of shapes (color:
+%         intercept and slope of line fit to errors as a function of the number of
+%         shapes).  Figure~\ref{fig:spatial_behavioral}.
+%       \end{itemize}
+%     \item Fitness info (break down by task performance, potentially
+%       separately for each task); also separate out recent (raw) and
+%       recent versus baseline -- color using same color scheme as
+%       behavior figure
+%       \begin{itemize}
+%       \item activity (steps, zone minutes, floors/elevation)
+%       \item resting heart rate
+%         \item sleep
+%         \end{itemize}
+  \item exploratory analysis (correlations).  Possibly make some sort of scatter matrix or pairplot-- rows/columns:
+          tasks.  Diagonal: histogram of performance metric for that
+          task.  Above-diagonal entries: compare performance across
+          tasks (by subject).  Below-diagonal entries: empty?
+          density/2d histograms?
+    \begin{itemize}
+    \item Memory-memory
+    \item fitness-fitness
+    \item survey-survey
+    \item (fitness + survey)-memory
+    \end{itemize}
+  \item predictive analysis (regressions)
+    \begin{itemize}
+    \item Predict memory performance on held-out task from other tasks
+    \item Predict memory performance on each task using fitness data
+      \item Predict memory performance on each task using survey data
+      \end{itemize}
+    \item Reverse correlations: look at recent changes versus baseline
+      trends (color using same scheme as behavior figures).  Possibly 
+      \begin{itemize}
+      \item Fitness profile that predicts performance on each task (barplots + timelines)
+      \item Fitness profile for each survey demographic (barplots + timelines)
+        \begin{itemize}
+          \item Select out mental health demographics (based on meds, stress levels)
+          \end{itemize}
+        \end{itemize}
+  \end{itemize}
+
+  \section*{Discussion}
+  \begin{itemize}
+  \item summarize key findings
+  \item correlation versus causation
+         \item what can vs. can't we know?  we can identify correlations, but not causal direction-- e.g. we cannot know whether exercise \textit{causes} mental changes versus whether people with particular neural profiles might tend to engage in particular exercise behaviors.  that being said, we \textit{can} separate out baseline tendencies (e.g., how people tend to exercise in general) versus recent changes (e.g., how they happened to have exercised prior to the experiment).
+  \item related work (exercise/memory, exercise/mental health), what this study adds
+    \item future direction: towards customized physical exercise recommendation engine for optimizing mental health and mental fitness
+    \end{itemize}
+
+   
 
 
 \section*{Acknowledgements}
