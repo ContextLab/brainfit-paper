@@ -34,6 +34,10 @@
 \newcommand{\fitScatterImmediate}{S8}
 \newcommand{\fitDistgridDelayed}{S9}
 \newcommand{\fitScatterDelayed}{S10}
+\newcommand{\behBehCorr}{S11}
+\newcommand{\fitFitCorr}{S12}
+\newcommand{\demDemCorr}{S13}
+\newcommand{\allCorr}{S14}
 
 
 \begin{document}
@@ -489,16 +493,15 @@ selected (with replacement) a sample of 113 participants to include.
 This yielded, for each iteration, a sampled ``data matrix'' with one
 row per sampled participant and one column for each measured variable.
 When participants were sampled multiple times in a given iteration, as
-was often the case, this matrix contained duplicate rows.  We used a
-round-robin imputation procedure to estimate the values of any missing
-features~\citep{Buck60}.  Next, we computed the Pearson's correlation
+was often the case, this matrix contained duplicate rows.  Next, we computed the Pearson's correlation
 between each pair of columns.  This yielded, for each pair of columns,
 a distribution of $N$ bootstrapped correlation coefficients.  If fewer
-than $95\%$ of the coefficients for a given pair of columns had the
+than $97.5\%$ of the coefficients for a given pair of columns had the
 same sign, we excluded the pair from further analysis and considered
 the expected correlation between those columns to be undefined.  If
-$\geq 95\%$ of the coefficients for a given pair of columns had the
-same sign, we computed the expected correlation coefficient as:
+$\geq 97.5\%$ of the coefficients for a given pair of columns had the
+same sign (corresponding to a bootstrap-estimated two-tailed $p$
+threshold of 0.05), we computed the expected correlation coefficient as:
 \[
   \mathbb{E}_{i, j}\left[ r\right] = \tanh\left(\frac{1}{N} \sum_{n=1}^N
   \tanh^{-1}(\mathrm{corr}\left(m(i)_n, m(j)_n\right))\right),
@@ -518,7 +521,10 @@ combination of memory-related variables, and so on.
 We used the same bootstrap procedure described above (used in our
 exploratory correlation analyses) to generate $N = 1000$ bootstrapped
 data matrices whose rows reflected sampled participants and whose
-columns reflected different measured variables.
+columns reflected different measured variables.  We used a
+round-robin imputation procedure to estimate the values of any missing
+features~\citep{Buck60}.  This imputation procedure was applied
+independently for input features and output features to prevent data contamination.
 
 We grouped variables according to whether they were memory-related,
 fitness-related, or demographic-related.  For each bootstrap
@@ -550,7 +556,7 @@ weights for each input variable.
 
 We constructed a ``null'' distribution by using the same procedure as
 above, but where the columns in the test datasets were randomly
-permuted with each iteration (thereby breaking any meaningful
+permuted with each of $M = 1000$ iterations (thereby breaking any meaningful
 predictive information between the training and test data).  We
 assessed the statistical significance ($p$-values) of the observed
 RMSD values by computing the proportions of null RMSD values that were
@@ -759,6 +765,74 @@ more information see Figures~\fitDists, \fitDistgridImmediate,
 \label{fig:fitness_summary}
 \end{figure}
 
+We wondered about potential links between the different aspects of
+participants' data.  For example, if people who exercised in a
+particular way also tended to perform better on a given memory task,
+this could suggest that either (a) some property intrinsic to participants who
+exercised in a particular way might also affect their memory
+performance on the given task, and/or (b) particular exercise behaviors
+could have a causal impact on memory performance.  We carried out an
+exploratory analysis whereby we used a bootstrap-based approach (see
+\textit{Exploratory correlation analyses}) to
+identify reliable correlations between different aspects of memory
+performance (Fig.~\behBehCorr), different aspects of fitness (Fig.~\fitFitCorr), different demographic
+attributes (Fig.~\demDemCorr), and correlations between memory
+performance, fitness information, and demographic attributes
+(Fig.~\allCorr).  Several patterns emerged.  First, we found that
+participants' performance on the (within-task) immediate versus delayed memory tests
+from the free recall, naturalistic recall, and foreign language
+flashcards tasks were positively correlated ($r$s $> 0.25$, $p$s $< 0.05$,
+bootstrap corrected).  This suggests that, within each of these tasks,
+similar processes or constraints may influence both short term and
+long term information retrieval.  We also found reliable across-task correlations
+between participants' (immediate and delayed) performance on the free
+recall and foreign language flashcards tasks ($r$s $> 0.3$, $p$s $< 0.05$,
+bootstrap corrected).
+
+A large number of fitness-related measures displayed reliable
+correlations (for a complete report, see Fig.~\fitFitCorr).  For
+example, body mass index (BMI) and weight were correlated
+($r = 0.91, p < 0.05$, bootstrap corrected).  Resting heart rate over
+the prior week was negatively correlated with recent high-intensity
+activity levels ($r = 0.39, p < 0.05$, bootstrap corrected).
+Participants' peak heart rate (averaged over the prior week) were also
+negative correlated with recent decreases in step counts and daily
+elevation gains ($r\mathrm{s} < -0.27, p\mathrm{s} < 0.05$, boostrap
+corrected), where recent changes were defined as the average values
+over the seven days leading up to the test day divided by the average
+values over the preceding 30 days.  Although several demographic
+attributes (Fig.~\demDemCorr) displayed trivial correlations (e.g.,
+participants identifying as male never reported identifying as female,
+and so on), we also observed a negative correlation between reported
+stress and alertness ($r = -0.44, p < 0.05$, bootstrap corrected), and
+positive correlations between the reported task difficulties for all
+tasks ($r\mathrm{s} > 0.26, p\mathrm{s} < 0.05$, bootstrap corrected).
+
+We also found reliable correlations between participants' fitness and
+demographic measures and their behaviors in different tasks
+(for a complete report, see Fig.~\allCorr).  For example, recent
+low-intensity (``fat burn'') cardiovascular activity was positively
+correlated with immediate
+($r = 0.44, p < 0.05$, bootstrap corrected) and delayed ($r = 0.37, p
+< 0.05$, bootstrap corrected) recall on the naturalistic memory task.
+Moderate intensity (``cardio'') cardiovascular activitiy was
+positively correlated with immediate naturalistic recall ($r = 0.47, p
+< 0.05$, bootstrap corrected) and immediate recall on the foreign
+language flashcards task ($r = 0.43, p < 0.05$, bootstrap corrected).
+Recent low-intensity (``out-of-range'') cardiovascular activity was
+negatively correlated with spatial memory performance ($r = -0.31, p <
+0.05$, bootstrap corrected) whereas recent high-intensity (``peak'')
+cardiovascular activity was positively correlated with spatial memory
+performance ($r = 0.34, p < 0.05$, bootstrap corrected).  Recent
+increases in high-intensity cardiovascular activity (more activity
+over the past 7 days than during the preceding 30 days) also predicted
+spatial memory performance ($r = 0.41, p < 0.05$, bootstrap
+corrected).  Coffee consumption was (slightly) positively correlated with
+immediate free recall performance ($r = 0.17, p < 0.05$, bootstrap
+corrected) and (slightly) negatively correlated with immediate
+naturalistic recall performance ($r = -0.16, p < 0.05$, bootstrap
+corrected).
+
 \begin{itemize}
 % \item characterizing behaviors (color by quartile and continue the
 %   color scheme in later figures-- hue reflects task, shading reflects
@@ -784,17 +858,17 @@ more information see Figures~\fitDists, \fitDistgridImmediate,
 %       \item resting heart rate
 %         \item sleep
 %         \end{itemize}
-  \item exploratory analysis (correlations).  Possibly make some sort of scatter matrix or pairplot-- rows/columns:
-          tasks.  Diagonal: histogram of performance metric for that
-          task.  Above-diagonal entries: compare performance across
-          tasks (by subject).  Below-diagonal entries: empty?
-          density/2d histograms?
-    \begin{itemize}
-    \item Memory-memory
-    \item fitness-fitness
-    \item survey-survey
-    \item (fitness + survey)-memory
-    \end{itemize}
+  % \item exploratory analysis (correlations).  Possibly make some sort of scatter matrix or pairplot-- rows/columns:
+  %         tasks.  Diagonal: histogram of performance metric for that
+  %         task.  Above-diagonal entries: compare performance across
+  %         tasks (by subject).  Below-diagonal entries: empty?
+  %         density/2d histograms?
+  %   \begin{itemize}
+  %   \item Memory-memory
+  %   \item fitness-fitness
+  %   \item survey-survey
+  %   \item (fitness + survey)-memory
+  %   \end{itemize}
   \item predictive analysis (regressions)
     \begin{itemize}
     \item Predict memory performance on held-out task from other tasks
