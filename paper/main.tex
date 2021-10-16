@@ -521,14 +521,24 @@ combination of memory-related variables, and so on.
 We used the same bootstrap procedure described above (used in our
 exploratory correlation analyses) to generate $N = 1000$ bootstrapped
 data matrices whose rows reflected sampled participants and whose
-columns reflected different measured variables.  We used a
-round-robin imputation procedure to estimate the values of any missing
-features~\citep{Buck60}.  This imputation procedure was applied
-independently for input features and output features to prevent data contamination.
+columns reflected different measured variables.  We used a round-robin
+imputation procedure to estimate the values of any missing
+features~\citep{Buck60}.  We applied this imputation procedure
+independently for each bootstrapped data matrix to prevent data
+contamination across iterations.
 
+Next, we fit a series of ridge regression models to the training data.
 We grouped variables according to whether they were memory-related,
-fitness-related, or demographic-related.  For each bootstrap
-iteration, we divided the rows of that iterations data matrix into
+fitness-related, or demographic-related.  
+We used variables from each group to predict held-out variables from
+the same group-- e.g., using performance on all but one task to
+predict performance on the held-out task.  We also examined
+predictions across groups of variables-- e.g., using fitness and
+demographic variables to predict memory-related variables.
+
+For each set of predictions, we used a bootstrap procedure to estimate
+the stability and reliability of those predictions.  For each bootstrap
+iteration, we divided the rows of that iteration's data matrix into
 training and test sets.  The assignments of rows to these two sets was
 random, subject to the constraint that any duplicated rows in the data
 matrix (i.e., reflecting a single participant who had been sampled
@@ -538,31 +548,22 @@ training and the test sets.  The training sets always comprised 75\%
 of the data, and the tests sets comprised the remaining 25\% of the
 data.
 
-Next, we fit a series of ridge regression models to the training data.
-Specifically, for each pairing of memory, fitness, and demographic
-variables, we fit a single ridge regression model treating the first
-variable group as the input features and the second variable group as
-the target features.  For example, one regression model used memory
-variables to predict fitness variables, and another regression model
-used fitness variables to predict demographic variables, and so on.
-In total we fit six regression models to each training dataset.  We
-then applied the fitted models to the held-out test dataset and
-computed the root mean squared deviation (RMSD) between the predicted
-and observed values in the target features of the test dataset.  We
-also examined the regression weights assigned to each input feature.
-This yielded, for each regression model (across $N$ bootstrap
-iterations) a distribution of RMSD values and a distribution of
-weights for each input variable.
-
-We constructed a ``null'' distribution by using the same procedure as
-above, but where the columns in the test datasets were randomly
-permuted with each of $M = 1000$ iterations (thereby breaking any meaningful
-predictive information between the training and test data).  We
-assessed the statistical significance ($p$-values) of the observed
-RMSD values by computing the proportions of null RMSD values that were
-less than the observed value.  We also assessed the significance of
-the observed regression weights using $t$-tests to compare the means
-of the observed versus null distributions of weights.
+For each bootstrap iteration, we computed the root mean squared
+deviation (RMSD) between the predicted and observed values in the
+target features of the test dataset.  We defined this as the
+\textit{observed} RMSD for that bootstrap iteration.  We also
+estimated a null distribution of RMSD values by re-fitting each
+iteration's data after randomly permuting the rows of the input data
+matrix 
+(thereby breaking any
+meaningful associations between the input and output features).  Taken
+together, this yielded a set of 1000 observed RMSD values and 1000
+null RMSD values.  We assessed the statistical significance
+($p$-values) of the observed RMSD values by computing the proportions
+of null RMSD values that were less than the observed value.  We also
+assessed the significance of the observed regression weights using
+$t$-tests to compare the means of the observed versus null
+distributions of weights, separately for each input and output feature.
 
 \subsubsection*{Reverse correlation analyses}
 We sought to characterize potential associations between the history
@@ -781,57 +782,50 @@ performance, fitness information, and demographic attributes
 (Fig.~\allCorr).  Several patterns emerged.  First, we found that
 participants' performance on the (within-task) immediate versus delayed memory tests
 from the free recall, naturalistic recall, and foreign language
-flashcards tasks were positively correlated ($r$s $> 0.25$, $p$s $< 0.05$,
+flashcards tasks were positively correlated ($r$s $> 0.25$, $p$s $< 0.003$,
 bootstrap corrected).  This suggests that, within each of these tasks,
 similar processes or constraints may influence both short term and
 long term information retrieval.  We also found reliable across-task correlations
 between participants' (immediate and delayed) performance on the free
-recall and foreign language flashcards tasks ($r$s $> 0.3$, $p$s $< 0.05$,
+recall and foreign language flashcards tasks ($r$s $> 0.3$, $p$s $< 0.03$,
 bootstrap corrected).
 
 A large number of fitness-related measures displayed reliable
 correlations (for a complete report, see Fig.~\fitFitCorr).  For
 example, body mass index (BMI) and weight were correlated
-($r = 0.91, p < 0.05$, bootstrap corrected).  Resting heart rate over
-the prior week was negatively correlated with recent high-intensity
-activity levels ($r = 0.39, p < 0.05$, bootstrap corrected).
+($r = 0.91, p < 0.0001$, bootstrap corrected).  Resting heart rate over
+the prior week was negatively correlated with recent
+low-to-moderate-intensity (``fat burn'') cardiovascular
+activity levels ($r = 0.70, p = 0.0004$, bootstrap corrected).
 Participants' peak heart rate (averaged over the prior week) were also
-negative correlated with recent decreases in step counts and daily
-elevation gains ($r\mathrm{s} < -0.27, p\mathrm{s} < 0.05$, boostrap
+negatively correlated with recent increases in step counts and daily
+elevation gains ($r\mathrm{s} < -0.26, p\mathrm{s} < 0.03$, boostrap
 corrected), where recent changes were defined as the average values
 over the seven days leading up to the test day divided by the average
 values over the preceding 30 days.  Although several demographic
 attributes (Fig.~\demDemCorr) displayed trivial correlations (e.g.,
 participants identifying as male never reported identifying as female,
 and so on), we also observed a negative correlation between reported
-stress and alertness ($r = -0.44, p < 0.05$, bootstrap corrected), and
-positive correlations between the reported task difficulties for all
-tasks ($r\mathrm{s} > 0.26, p\mathrm{s} < 0.05$, bootstrap corrected).
+stress and alertness ($r = -0.44, p < 0.0001$, bootstrap corrected), and
+positive correlations between the reported clarity of the instructions for all
+tasks ($r\mathrm{s} > 0.26, p\mathrm{s} < 0.02$, bootstrap corrected).
 
 We also found reliable correlations between participants' fitness and
 demographic measures and their behaviors in different tasks
 (for a complete report, see Fig.~\allCorr).  For example, recent
-low-intensity (``fat burn'') cardiovascular activity was positively
-correlated with immediate
-($r = 0.44, p < 0.05$, bootstrap corrected) and delayed ($r = 0.37, p
-< 0.05$, bootstrap corrected) recall on the naturalistic memory task.
-Moderate intensity (``cardio'') cardiovascular activitiy was
-positively correlated with immediate naturalistic recall ($r = 0.47, p
-< 0.05$, bootstrap corrected) and immediate recall on the foreign
-language flashcards task ($r = 0.43, p < 0.05$, bootstrap corrected).
-Recent low-intensity (``out-of-range'') cardiovascular activity was
-negatively correlated with spatial memory performance ($r = -0.31, p <
-0.05$, bootstrap corrected) whereas recent high-intensity (``peak'')
-cardiovascular activity was positively correlated with spatial memory
-performance ($r = 0.34, p < 0.05$, bootstrap corrected).  Recent
-increases in high-intensity cardiovascular activity (more activity
-over the past 7 days than during the preceding 30 days) also predicted
-spatial memory performance ($r = 0.41, p < 0.05$, bootstrap
-corrected).  Coffee consumption was (slightly) positively correlated with
-immediate free recall performance ($r = 0.17, p < 0.05$, bootstrap
-corrected) and (slightly) negatively correlated with immediate
-naturalistic recall performance ($r = -0.16, p < 0.05$, bootstrap
-corrected).
+low-to-moderate-intensity (``fat burn'') 
+cardiovascular activity was positively
+correlated with immediate ($r = 0.38, p = 0.03$) and delayed ($r =
+0.38, p = 0.029$) recall on the naturalistic
+memory task.  Recent increases in moderate-intensity (``cardio'')
+activity over the prior 7 days (relative to the preceding 30 days) was
+also positively correlated with immediate naturalistic recall ($r =
+0.48, p = 0.003$) and immediate recall on the foreign language
+flashcards task ($r = 0.43, p = 0.048$).  Recent high-intensity
+(``peak'') activity was positively correlated with performance on the
+spatial learning task ($r = 0.34, p < 0.0001$), as were recent increases
+in high-intensity activity (prior 7 days versus preceding 30 days; $r
+= 0.41, p = 0.01$).
 
 \begin{itemize}
 % \item characterizing behaviors (color by quartile and continue the
