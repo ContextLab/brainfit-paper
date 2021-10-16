@@ -488,7 +488,7 @@ that.
 \subsubsection*{Exploratory correlation analyses}
 We used a bootstrap procedure to identify reliable correlations
 between different memory-related, fitness-related, and
-demographic-related variables.  For each of $N = 1000$ iterations, we
+demographic-related variables.  For each of $N = 10,000$ iterations, we
 selected (with replacement) a sample of 113 participants to include.
 This yielded, for each iteration, a sampled ``data matrix'' with one
 row per sampled participant and one column for each measured variable.
@@ -519,7 +519,7 @@ whether a combination of fitness-related variables could predict a
 combination of memory-related variables, and so on.
 
 We used the same bootstrap procedure described above (used in our
-exploratory correlation analyses) to generate $N = 1000$ bootstrapped
+exploratory correlation analyses) to generate $N = 10,000$ bootstrapped
 data matrices whose rows reflected sampled participants and whose
 columns reflected different measured variables.  We used a round-robin
 imputation procedure to estimate the values of any missing
@@ -529,12 +529,9 @@ contamination across iterations.
 
 Next, we fit a series of ridge regression models to the training data.
 We grouped variables according to whether they were memory-related,
-fitness-related, or demographic-related.  
-We used variables from each group to predict held-out variables from
-the same group-- e.g., using performance on all but one task to
-predict performance on the held-out task.  We also examined
-predictions across groups of variables-- e.g., using fitness and
-demographic variables to predict memory-related variables.
+fitness-related, or demographic-related.  We examined whether
+fitness-related and demographic-related features could be used to predict
+performance on one or more of the memory tasks.
 
 For each set of predictions, we used a bootstrap procedure to estimate
 the stability and reliability of those predictions.  For each bootstrap
@@ -557,13 +554,13 @@ iteration's data after randomly permuting the rows of the input data
 matrix 
 (thereby breaking any
 meaningful associations between the input and output features).  Taken
-together, this yielded a set of 1000 observed RMSD values and 1000
+together, this yielded a set of $10,000$ observed RMSD values and $10,000$
 null RMSD values.  We assessed the statistical significance
 ($p$-values) of the observed RMSD values by computing the proportions
 of null RMSD values that were less than the observed value.  We also
 assessed the significance of the observed regression weights using
 $t$-tests to compare the means of the observed versus null
-distributions of weights, separately for each input and output feature.
+distributions of weights, for each combination of features.
 
 \subsubsection*{Reverse correlation analyses}
 We sought to characterize potential associations between the history
