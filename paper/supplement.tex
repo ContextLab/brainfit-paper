@@ -24,6 +24,14 @@
 \affil[2]{Lockheed Martin, Bethesda, MD}
 \affil[$\star$]{Address correspondence to jeremy.r.manning@dartmouth.edu}
 
+\newcommand{\task}{1}
+\newcommand{\immediateBehavior}{2}
+\newcommand{\delayedBehavior}{3}
+\newcommand{\fitness}{4}
+\newcommand{\MHcorr}{5}
+\newcommand{\dynamics}{6}
+
+
 \begin{document}
 \maketitle
 
@@ -47,21 +55,76 @@
 \begin{sidewaysfigure}[p]
 \centering
 \includegraphics[width=1\textwidth]{figs/free_recall_behavior}
-\caption{\textbf{Free recall behavioral results.}}
+\caption{\textbf{Free recall behavioral results.  a--e. Immediate free
+  recall.}  \textbf{a. Probability of first recall.}  Probability of
+recalling each studied word first, as a function of its presentation
+position.  \textbf{b. Lag Conditional Response Probability.}
+Probability of recalling the word presented at position $i +
+\mathrm{Lag}$ following the recall of the word presented at position
+$i$.  \textbf{c. Clustering scores.}  Each score denotes participants'
+tendancies to successively recall (cluster) words according to the
+given feature dimension~\citep{PolyEtal09}: word length, starting letter, (semantic)
+category, size (large or small), or presentation position (temporal).
+\textbf{d. Serial position curve.}  Probability of recalling each word
+as a function of its presentation position.  \textbf{e. Recall
+  accuracy.}  Distribution of the average proportions of recalled
+words, across all lists studied by each participant.  \textbf{f--j.
+  Delayed free recall.}  These panels are in the same formats as
+Panels a -- e, but they reflect performance on the delayed free recall
+memory tests.  All panels: error bars and error ribbons denote bootstrap-estimated
+95\% confidence intervals.  Shading (saturation) denotes results for
+different subsets of participants, according to the average
+proporition of words they remembered (group boundaries are indicated
+by the colored lines in Panels e and j).}
 \label{fig:fr_behavioral}
 \end{sidewaysfigure}
 
 \begin{sidewaysfigure}[p]
 \centering
 \includegraphics[width=1\textwidth]{figs/naturalistic_recall_behavior}
-\caption{\textbf{Naturalistic recall behavioral results.}}
+\caption{\textbf{Naturalistic recall behavioral results.}
+  \textbf{a. Identified topics.}  Applying a topic model to a series
+  of sliding windows of the video's transcript~\citep{HeusEtal21}
+  revealed a set of 13 unique (non-trivial) topics.  The Panel
+  displays the 5 top-weighted words from each topic.  \textbf{b. Topic
+  timecourse of the video.}  Each row displays the topic weights for a
+single moment of the video.  \textbf{c. Topic correlation matrix.}  The
+correlations between the topic vectors for each pair of moments from
+the video reveals an event-like block diagonal structure.
+\textbf{d. Video topic trajectory.}  The topic video's topic
+timecourse (Panel b) has been projected onto 2-dimensions using
+Uniform Manifold Approximation and
+Projection~\citep[UMAP;][]{McInEtal18}.  Each colored dot reflects an
+event, identified by applying a Hidden Markov Model to the video's
+topic timecourse~\citep{BaldEtal17, HeusEtal21}.  Red dots denote
+earlier timepoints in the video and blue dots denote later
+timepoints.  \textbf{e. Immediate recall trajectory.}  The black curve
+displays the average
+topic timecourse (projected into 2D using UMAP), obtained by applying the topic model shown in Panel A
+to the participants' written transcripts from the immediate recall
+test.  The arrows denote agreement across participants in the
+directions of their topic trajectories, for participants whose
+trajectories intersected the corresponding region of topic space.
+Blue arrows denote reliable agreement across participants ($p < 0.05$, corrected).
+\textbf{f. Delayed recall trajectory.} This panel is in the same
+format as Panel e, but displays the trajectory for participants'
+delayed recall of the video.  \textbf{g. Immediate recall precision.}  Distribution of
+average recall \textit{precision}, across all of the events each
+participant recalled during the immediate recall test.  Precision is
+defined as the correlation between the topic vector for a given
+recalled event and the best-matching (most highly correlated) video
+event's topic
+vector~\citep{HeusEtal21}.  \textbf{h. Delayed recall precision.}
+This panel is in the same format as Panel g, but displays the average
+precision values for the delayed memory test.}
 \label{fig:nat_behavioral}
 \end{sidewaysfigure}
 
 \begin{figure}[p]
 \centering
 \includegraphics[width=0.6\textwidth]{figs/vocab_learning_behavior}
-\caption{\textbf{Foreign language vocabulary learning behavioral results.}}
+\caption{\textbf{Foreign language vocabulary learning behavioral
+    results.}  \textbf{a. Immediate recall....}}
 \label{fig:vocab_behavioral}
 \end{figure}
 
@@ -191,6 +254,8 @@
 \label{fig:sleep_timecourse_MH}
   \end{figure}
 
+  \clearpage
+  \newpage
 \bibliographystyle{apa}
 \bibliography{/Users/jmanning/CDL-bibliography/cdl}
 \end{document}
