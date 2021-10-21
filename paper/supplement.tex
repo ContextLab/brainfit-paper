@@ -36,6 +36,7 @@
 \maketitle
 
 \renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
 
 
 \begin{figure}[p]
@@ -62,7 +63,7 @@ position.  \textbf{b. Lag Conditional Response Probability.}
 Probability of recalling the word presented at position $i +
 \mathrm{Lag}$ following the recall of the word presented at position
 $i$.  \textbf{c. Clustering scores.}  Each score denotes participants'
-tendancies to successively recall (cluster) words according to the
+tendencies to successively recall (cluster) words according to the
 given feature dimension~\citep{PolyEtal09}: word length, starting letter, (semantic)
 category, size (large or small), or presentation position (temporal).
 \textbf{d. Serial position curve.}  Probability of recalling each word
@@ -74,7 +75,7 @@ Panels a -- e, but they reflect performance on the delayed free recall
 memory tests.  All panels: error bars and error ribbons denote bootstrap-estimated
 95\% confidence intervals.  Shading (saturation) denotes results for
 different subsets of participants, according to the average
-proporition of words they remembered (group boundaries are indicated
+proportion of words they remembered (group boundaries are indicated
 by the colored lines in Panels e and j).}
 \label{fig:fr_behavioral}
 \end{sidewaysfigure}
@@ -149,7 +150,7 @@ bootstrap-estimated 95\% confidence intervals.}
   studied and recalled positions.  The bars show the average
   estimation error (across all shapes for each memory test) versus the
   number of memorized shapes.  \textbf{a. Slope.} Estimation errors
-  are broken down by the slopes of regresion lines fit to each
+  are broken down by the slopes of regression lines fit to each
   participant's estimation errors as a function of the number of
   memorized shapes.  Shallower slopes (i.e., smaller decreases in
   performance associated with memorizing more shapes) are reflected by
@@ -173,10 +174,79 @@ bootstrap-estimated 95\% confidence intervals.}
 \label{fig:spatial_behavioral}
 \end{figure}
 
+\clearpage
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{1.5in}p{4in}p{1.5in}}
+\textbf{Abbreviation}   & \textbf{Description}
+  & \textbf{Units}                           \\
+  \hline
+Resting HR              & Average daily resting heart rate                                                                                                                                                     & beats per minute (BPM)                   \\
+  \hline
+HR variability          & Heart rate variability (average daily variation between heartbeats)                                                                                                                  & milliseconds (ms)                        \\
+  \hline
+Steps                   & Number of steps taken each day                                                                                                                                                       & steps (count)                            \\
+  \hline
+Distance                & Estimated distance traveled each day                                                                                                                                                 & kilometers (km)                          \\
+  \hline
+Elevation               & Estimated daily elevation gain                                                                                                                                                       & feet (ft)                                \\
+  \hline
+Floors climbed          & Estimated number of daily floors climbed                                                                                                                                             & floors (count)                           \\
+  \hline
+Light activity          & Number of estimated daily minutes spent doing low-intensity activity                                                                                                                 & minutes (min)                            \\
+  \hline
+Fair activity           & Number of estimated daily minutes spent doing moderate-intensity activity                                                                                                            & minutes (min)                            \\
+  \hline
+High intensity activity & Number of estimated daily minutes spent doing high-intensity activity                                                                                                                & minutes (min)                            \\
+  \hline
+Excess calories         & Number of estimated daily calories burned minus estimated calorie intake                                                                                                             & calories (cal)                           \\
+  \hline
+Out-of-range HR         & Number of daily minutes spent with a heart rate lower than the "fat burn" heart rate zone (50\% of the maximum heart rate); maximum heart rate is defined as 220 minus age, in years & minutes (min)                            \\
+  \hline
+Fat burn HR             & Number of daily minutes spent with a heart rate between 50\% and 69\% of the maximum heart rate                                                                                      & minutes (min)                            \\
+  \hline
+Cardio HR               & Number of daily minutes spent with a heart rate between 70\% and 84\% of the maximum heart rate                                                                                      & minutes (min)                            \\
+  \hline
+Peak HR                 & Number of daily minutes spent with a heart rate between 85\% and 100\% of the maximum heart rate                                                                                     & minutes (min)                            \\
+  \hline
+Sleep duration          & Estimated number of hours slept during the prior 24 hour period                                                                                                                      & hours (hr)                               \\
+  \hline
+BMI                     & Body mass index, calculated as the
+                          individual's weight (in kg) divided by their
+                          height (in m) squared
+  & kilograms per meter squared (kg/m\textsuperscript{2}) \\
+  \hline
+Body fat                & Estimated percentage of body fat (as a proportion of the individual's total weight)                                                                                                  & percentage (\%)                          \\
+  \hline
+Weight                  & Logged or measured weight                                                                                                                                                            & kilograms (kg)                           \\
+  \hline
+Water intake            & Self-reported water intake                                                                                                                                                           & 8 ounce cups (count)                     \\
+  \hline
+Coffee intake           & Self-reported coffee intake                                                                                                                                                          & 8 ounce cups (count)                    
+\end{tabular}%
+}
+\caption{\textbf{Abbreviations of fitness-related measures.}  The
+  abbreviations and descriptions provided in the table apply to the
+  main text and supplement.}
+\label{tab:abbreviations}
+\end{table}
+
 \begin{sidewaysfigure}[p]
 \centering
 \includegraphics[width=\textwidth]{figs/fitness_distributions}
-\caption{\textbf{Distributions of fitness measures.}}
+\caption{\textbf{Distributions of fitness measures.}  All
+  abbreviations and measures are described in
+  Table~\ref{tab:abbreviations}.  \textbf{a. Recent measures.}
+  Daily values of each measure, averaged over the week prior to each
+  participant's test day.  \textbf{b. Baselined measures.}  Daily
+  values of each measure, averaged over the week prior to each
+  participant's test day and divided by the average taken over the
+  preceding 30 days.  \textbf{c. Static measures.} For each measure,
+  only the most recently logged values are considered.  All panels:
+  note that not all measures were captured for all participants.  Only
+participants whose Fitbit records logged each given measure are
+included in the distribution(s) for that measure.}
 \label{fig:fitness_dists}
 \end{sidewaysfigure}
 
@@ -184,7 +254,12 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=\textwidth]{figs/fitness_dists_immediate}
 \caption{\textbf{Distributions of fitness measures, broken down
-    by immediate task performance.}}
+    by immediate task performance.}  The distributions of recent
+  (Panel a), baselined (Panel b), and static (Panel c) fitness
+  measures (Tab.~\ref{tab:abbreviations}) are broken down by
+  participants' performance on each immediate recall test
+  (Figs.~\immediateBehavior, \ref{fig:fr_behavioral},
+  \ref{fig:nat_behavioral}, \ref{fig:vocab_behavioral}, and \ref{fig:spatial_behavioral})}
 \label{fig:fitness_dists_immediate}
 \end{sidewaysfigure}
 
@@ -192,7 +267,11 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=\textwidth]{figs/fitness_scatter_immediate}
 \caption{\textbf{Scatterplots of fitness measures versus
-    immediate task performance measures.}}
+    immediate task performance measures.}  The scatterplots of recent
+  (Panel a), baselined (Panel b), and static (Panel c) fitness
+  measures (Tab.~\ref{tab:abbreviations}) are plotted against 
+  participants' performance on each immediate recall test
+  (Figs.~\immediateBehavior, \ref{fig:fr_behavioral}, \ref{fig:nat_behavioral}, \ref{fig:vocab_behavioral}, and \ref{fig:spatial_behavioral})}
 \label{fig:fitness_scatters_immediate}
 \end{sidewaysfigure}
 
@@ -200,7 +279,12 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=\textwidth]{figs/fitness_dists_delayed}
 \caption{\textbf{Distributions of fitness measures, broken down
-    by delayed task performance.}}
+    by delayed task performance.} The distributions of recent
+  (Panel a), baselined (Panel b), and static (Panel c) fitness
+  measures (Tab.~\ref{tab:abbreviations}) are broken down by
+  participants' performance on each delayed recall test
+  (Figs.~\delayedBehavior, \ref{fig:fr_behavioral},
+  \ref{fig:nat_behavioral}, and \ref{fig:vocab_behavioral})}
 \label{fig:fitness_dists_delayed}
 \end{sidewaysfigure}
 
@@ -208,7 +292,12 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=\textwidth]{figs/fitness_scatter_delayed}
 \caption{\textbf{Scatterplots of fitness measures versus
-    delayed task performance measures.}}
+    delayed task performance measures.} The scatterplots of recent
+  (Panel a), baselined (Panel b), and static (Panel c) fitness
+  measures (Tab.~\ref{tab:abbreviations}) are plotted against 
+  participants' performance on each delayed recall test
+  (Figs.~\delayedBehavior, \ref{fig:fr_behavioral},
+  \ref{fig:nat_behavioral}, and \ref{fig:vocab_behavioral})}
 \label{fig:fitness_scatters_delayed}
 \end{sidewaysfigure}
 
@@ -216,7 +305,14 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=0.4\textwidth]{figs/behavior_behavior_correlations}
 \caption{\textbf{Bootstrap-estimated reliable correlations between
-    behavioral measures.}}
+    behavioral measures.}  The measures are described and summarized in the
+  distributions shown in Figures~\ref{fig:fr_behavioral},
+  \ref{fig:nat_behavioral}, \ref{fig:vocab_behavioral}, and
+  \ref{fig:spatial_behavioral}.
+The reported values denote the correlation coefficient between the
+given row and column.  Only statistically reliable correlations are
+displayed ($p < 0.05$, corrected; see \textit{Exploratory correlation
+  analysis}, main text).}
 \label{fig:behavioral_corrs}
 \end{figure}
 
@@ -224,7 +320,11 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=\textwidth]{figs/fitness_fitness_correlations}
 \caption{\textbf{Bootstrap-estimated reliable correlations between
-    fitness measures.}}
+    fitness measures.}  Fitness measures are described in summarized
+  in Table~\ref{tab:abbreviations}.  The reported values denote the correlation coefficient between the
+given row and column.  Only statistically reliable correlations are
+displayed ($p < 0.05$, corrected; see \textit{Exploratory correlation
+  analysis}, main text).}
 \label{fig:fitness_corrs}
 \end{figure}
 
@@ -232,7 +332,11 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=\textwidth]{figs/survey_survey_correlations}
 \caption{\textbf{Bootstrap-estimated reliable correlations between
-    demographic measures.}}
+    demographic measures.}  Demographic measures are described in the
+  main text (\textit{Participants}).  The reported values denote the correlation coefficient between the
+given row and column.  Only statistically reliable correlations are
+displayed ($p < 0.05$, corrected; see \textit{Exploratory correlation
+  analysis}, main text).}
 \label{fig:survey_corrs}
 \end{figure}
 
@@ -240,7 +344,12 @@ bootstrap-estimated 95\% confidence intervals.}
 \centering
 \includegraphics[width=\textwidth]{figs/behavior_fitness+survey_correlations}
 \caption{\textbf{Bootstrap-estimated reliable correlations between
-    behavioral measures and fitness or demographic measures.}}
+    behavioral measures and fitness or demographic measures.}  All
+  measures and abbreviations in this figure use the same notations as
+  Figures~\ref{fig:behavioral_corrs}, \ref{fig:fitness_corrs}, and
+  \ref{fig:survey_corrs}.  Only statistically reliable correlations are
+displayed ($p < 0.05$, corrected; see \textit{Exploratory correlation
+  analysis}, main text).}
 \label{fig:fitness_survey_corrs}
 \end{sidewaysfigure}
 
@@ -248,7 +357,8 @@ bootstrap-estimated 95\% confidence intervals.}
   \centering
   \includegraphics[width=0.75\textwidth]{figs/weighted_timecourse_activity}
 \caption{\textbf{History of fitness activity levels weighted by
-    behavioral performance.}}
+    behavioral performance.}  This figure is in the same format as
+  Figure~\dynamics a and b, but shows additional fitness-related measures (Tab.~\ref{tab:abbreviations}).}
 \label{fig:activity_timecourse}
 \end{figure}
 
@@ -256,7 +366,8 @@ bootstrap-estimated 95\% confidence intervals.}
   \centering
   \includegraphics[width=0.7\textwidth]{figs/weighted_timecourse_HR}
 \caption{\textbf{History of cardiovascular activity weighted by
-    behavioral performance.}}
+    behavioral performance.}  This figure is in the same format as
+  Figure~\dynamics a and b, but shows additional fitness-related measures (Tab.~\ref{tab:abbreviations}).}
 \label{fig:HR_timecourse}
   \end{figure}
 
@@ -264,7 +375,8 @@ bootstrap-estimated 95\% confidence intervals.}
   \centering
   \includegraphics[width=0.75\textwidth]{figs/weighted_timecourse_sleep}
 \caption{\textbf{History of sleep efficiency and duration weighted by
-    behavioral performance.}}
+    behavioral performance.}  This figure is in the same format as
+  Figure~\dynamics a and b, but shows additional fitness-related measures (Tab.~\ref{tab:abbreviations}).}
 \label{fig:sleep_timecourse}
 \end{figure}
 
@@ -272,7 +384,8 @@ bootstrap-estimated 95\% confidence intervals.}
   \centering
   \includegraphics[width=0.75\textwidth]{figs/weighted_timecourse_activity_MH}
 \caption{\textbf{History of fitness activity levels weighted by
-    mental health factors.}}
+    mental health factors.}  This figure is in the same format as
+  Figure~\dynamics c, but shows additional fitness-related measures (Tab.~\ref{tab:abbreviations}).}
 \label{fig:activity_timecourse_MH}
 \end{sidewaysfigure}
 
@@ -280,7 +393,8 @@ bootstrap-estimated 95\% confidence intervals.}
   \centering
   \includegraphics[width=\textwidth]{figs/weighted_timecourse_HR_MH}
 \caption{\textbf{History of cardiovascular activity weighted by
-    mental health factors.}}
+    mental health factors.} This figure is in the same format as
+  Figure~\dynamics c, but shows additional fitness-related measures (Tab.~\ref{tab:abbreviations}).}
 \label{fig:HR_timecourse_MH}
   \end{sidewaysfigure}
 
@@ -288,7 +402,8 @@ bootstrap-estimated 95\% confidence intervals.}
   \centering
   \includegraphics[width=0.75\textwidth]{figs/weighted_timecourse_sleep_MH}
 \caption{\textbf{History of sleep efficiency and duration weighted by
-    mental health factors.}}
+    mental health factors.} This figure is in the same format as
+  Figure~\dynamics c, but shows additional fitness-related measures (Tab.~\ref{tab:abbreviations}).}
 \label{fig:sleep_timecourse_MH}
   \end{figure}
 
