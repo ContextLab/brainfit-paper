@@ -59,7 +59,7 @@
   hypothesized that the mental benefits of exercise might be similarly
   differentiated.  We focused specifically on how different forms of
   exercise might related to different aspects of memory and mental
-  health.  To test our hypothesis, we collected nearly a century's
+  health.  To test our hypothesis, we collected roughly a century's
   worth of fitness data (in aggregate).  We then asked participants to
   fill out surveys asking them to self-report on different aspects of
   their mental health.  We also asked participants to engage in a
@@ -100,7 +100,7 @@ levels, starting in the vicinity of the exercised
 muscles~\citep{ShoeEtal97}.  Acetylcholine is thought to play an
 important role in memory formation~\citep[e.g., by modulating specific
 synaptic inputs from entorhinal cortex to the hippocampus, albeit in
-rodents;]{PalaEtal21}.  Given the central role of these medial
+rodents;][]{PalaEtal21}.  Given the central role that these medial
 temporal lobe structures play in memory, changes in acetylcholine
 might lead to specific changes in memory formation and retrieval.
 
@@ -136,14 +136,14 @@ who score highly across several metrics on a large number of HITs,
 according to a proprietary algorithm managed by Amazon.  We further
 limited our participant pool to participants who self-reported that
 they were fluent in English and regularly used a Fitbit fitness
-tracker device.  A total of 160 workers accepted our
-HIT in order to participate in our experiment.  Of these, we excluded all
-participants who failed to log into their Fitbit account (giving us
-access to their anonymized fitness tracking data), encountered
-technical issues (e.g., by accessing the HIT using an incompatible browser, device, or
+tracker device.  A total of 160 workers accepted our HIT in order to
+participate in our experiment.  Of these, we excluded all participants
+who failed to log into their Fitbit account (giving us access to their
+anonymized fitness tracking data), encountered technical issues (e.g.,
+by accessing the HIT using an incompatible browser, device, or
 operating system), or who ended their participation prematurely,
-before completing the full study.  In all, 113 participants remained
-that contributed usable data to the study.
+before completing the full study.  In all, 113 participants
+contributed usable data to the study.
 
 For their participation, workers received a base payment of \$5 per hour (computed in 15
 minute increments, rounded up to the nearest 15 minutes), plus an
@@ -175,7 +175,7 @@ percentile: 3).
 Participants reported having and/or taking medications pertaining to the following medical conditions: anxiety or
 depression (4 participants), recent head injury (2 participants), high
 blood pressure (1 participant), bipolar (1 participant),
-hypothyroidism (1 participant), and other unspecified medications (1
+hypothyroidism (1 participant), and other unspecified conditions or medications (1
 participant).  Participants reported their current and typical stress
 levels on a Likert scale as very relaxed (-2), a little relaxed (-1),
 neutral (0), a little stressed (1), or very stressed (2).  The
@@ -209,7 +209,7 @@ participants), Some graduate training (3 participants), or Doctorate
 (2 participants).
 
 \paragraph{Reported water and coffee intake.}
-Participants reported the number of cups of water and coffee they had
+Participants reported the number of 8~oz cups of water and coffee they had
 consumed prior to accepting the HIT.  Water consumption ranged from
 0--6 cups (25\textsuperscript{th} percentile: 1;
 50\textsuperscript{th} percentile: 3; 75\textsuperscript{th}
@@ -219,10 +219,10 @@ percentile: 2).
 
 
 \subsubsection*{Tasks}
-Upon accepting the HIT posted on Mechanical Turk, the worker was
+Upon accepting the HIT posted on Mechanical Turk, each worker was
 directed to read and fill out a screening and consent form, and to
 share access to their anonymized Fitbit data via their Fitbit account.
-After consenting to participant and successfully sharing their Fitbit
+After consenting to participate in our stidy and successfully sharing their Fitbit
 data, participants filled out a survey and then engaged in a series of
 memory tasks (Fig.~\ref{fig:tasks}).  All stimuli and code for running
 the full Mechanical Turk experiment may be found
@@ -285,7 +285,7 @@ This was intended to prevent participants from retroactively editing
 their previous responses.
 
 The word lists participants studied were drawn from the categorized
-lists reported in \cite{ZimaEtal18}.  Each participant was assigned
+lists reported by \cite{ZimaEtal18}.  Each participant was assigned
 four unique randomly chosen lists (in a randomized order), selected
 from a full set of 16 lists.  Each chosen list was then randomly
 shuffled before presenting the words to the participants.
@@ -514,7 +514,9 @@ threshold of 0.05), we computed the expected correlation coefficient as:
 \]
 where $m(x)_n$ represents column $x$ of the bootstrapped data matrix
 for iteration $n$, $\tanh$ is the hyperbolic tangent, and $\tanh^{-1}$
-is the inverse hyperbolic tangent.
+is the inverse hyperbolic tangent.  We estimated the corresponding $p$-values
+for these correlations as one minus the proportion of bootstrapped
+correlations with the same sign, multiplied by two.
 
 \subsubsection*{Reverse correlation analyses}
 We sought to characterize potential associations between the history
@@ -756,8 +758,7 @@ low-to-moderate-intensity (``fat burn'') cardiovascular
 activity levels ($r = 0.70, p = 0.0004$).
 Participants' peak heart rate (averaged over the prior week) were also
 negatively correlated with recent increases in step counts and daily
-elevation gains ($r\mathrm{s} < -0.26, p\mathrm{s} < 0.03$, bootstrap
-corrected), where recent changes were defined as the average values
+elevation gains ($r\mathrm{s} < -0.26, p\mathrm{s} < 0.03$), where recent changes were defined as the average values
 over the seven days leading up to the test day divided by the average
 values over the preceding 30 days.  Although several demographic
 attributes (Fig.~\demDemCorr) displayed trivial correlations (e.g.,
