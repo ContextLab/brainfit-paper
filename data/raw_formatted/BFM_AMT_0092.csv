@@ -1,0 +1,343 @@
+datetime,variable,value
+2018-07-06 18:58:56.000,UTC,1530903536
+2018-07-06 18:58:56.000,comp_info,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-07-06 18:58:56.000,exp_event,exp_start
+2018-07-06 19:01:06.003,exp_event,birthyear_start
+2018-07-06 19:01:12.952,birthyear,1995.0
+2018-07-06 19:01:12.954,exp_event,gender_start
+2018-07-06 19:01:14.709,gender,Female
+2018-07-06 19:01:14.710,exp_event,degree_start
+2018-07-06 19:01:20.866,degree,College graduate
+2018-07-06 19:01:20.873,exp_event,race_start
+2018-07-06 19:01:23.261,race,[u'White']
+2018-07-06 19:01:23.280,exp_event,fluent_langs_start
+2018-07-06 19:01:29.173,fluent_langs,[u'English']
+2018-07-06 19:01:29.186,exp_event,familiar_langs_start
+2018-07-06 19:01:43.191,familiar_langs,"[u'Spanish', u'French', u'Japanese']"
+2018-07-06 19:01:45.461,exp_event,impair_start
+2018-07-06 19:01:55.168,color_vision,Yes
+2018-07-06 19:01:55.168,uncorr_impair,No
+2018-07-06 19:01:55.170,exp_event,recent_meds_injuries_start
+2018-07-06 19:02:06.735,recent_meds_injuries,no
+2018-07-06 19:02:06.740,exp_event,alert_stress_start
+2018-07-06 19:02:19.176,current_alert,A little alert
+2018-07-06 19:02:19.176,current_stress,A little relaxed
+2018-07-06 19:02:19.176,typical_stress,A little relaxed
+2018-07-06 19:02:19.179,exp_event,sleep_hrs_start
+2018-07-06 19:02:23.805,sleep_hrs,7.0
+2018-07-06 19:02:23.809,exp_event,coffee_water_start
+2018-07-06 19:02:30.998,coffee_cups,0
+2018-07-06 19:02:30.998,water_cups,1
+2018-07-06 19:02:31.003,exp_event,setting_activity_start
+2018-07-06 19:02:39.155,job_activity,Active
+2018-07-06 19:02:39.155,live_setting,Suburban
+2018-07-06 19:02:39.158,exp_event,exercise_today_plan_start
+2018-07-06 19:02:42.513,exercise_plan,Yes
+2018-07-06 19:02:42.513,exercise_today,No
+2018-07-06 19:02:42.515,exp_event,exercise_freq_start
+2018-07-06 19:02:47.131,exercise_freq,7 days per week
+2018-07-06 19:02:47.135,exp_event,exercise_tracker_motiv_start
+2018-07-06 19:02:57.341,exercise_motiv,Physical Health
+2018-07-06 19:02:57.341,tracker_sync_today,Yes
+2018-07-06 19:02:57.341,tracker_wear_freq,Rarely
+2018-07-06 19:02:57.344,exp_event,tracker_features_start
+2018-07-06 19:03:10.780,tracker_features,"[u'Step Counts', u'Sleep Tracking', u'Weight Logs']"
+2018-07-06 19:03:10.782,exp_event,tracker_motiv_start
+2018-07-06 19:03:36.950,tracker_motiv," i don't wear it,  but would wear it to log weight loss."
+2018-07-06 19:04:35.619,exp_event,wl_pres_1_start
+2018-07-06 19:04:35.619,pres_word_1,DAISY
+2018-07-06 19:04:39.622,pres_word_1,TOASTER
+2018-07-06 19:04:43.625,pres_word_1,DRESS
+2018-07-06 19:04:47.627,pres_word_1,SUNFLOWER
+2018-07-06 19:04:51.632,pres_word_1,UTAH
+2018-07-06 19:04:55.636,pres_word_1,ARIZONA
+2018-07-06 19:04:59.643,pres_word_1,MONTANA
+2018-07-06 19:05:03.648,pres_word_1,PANTS
+2018-07-06 19:05:07.655,pres_word_1,KNIFE
+2018-07-06 19:05:11.660,pres_word_1,LILY
+2018-07-06 19:05:15.664,pres_word_1,SKILLET
+2018-07-06 19:05:19.666,pres_word_1,UNDERWEAR
+2018-07-06 19:05:23.669,pres_word_1,GIRDLE
+2018-07-06 19:05:27.674,pres_word_1,FORK
+2018-07-06 19:05:31.677,pres_word_1,MAINE
+2018-07-06 19:05:35.680,pres_word_1,NARCISSUS
+2018-07-06 19:07:18.156,exp_event,wl_pres_2_start
+2018-07-06 19:07:18.156,pres_word_2,ACCORDION
+2018-07-06 19:07:22.158,pres_word_2,LIP
+2018-07-06 19:07:26.162,pres_word_2,WORM
+2018-07-06 19:07:30.164,pres_word_2,EUCALYPTUS
+2018-07-06 19:07:34.166,pres_word_2,SCORPION
+2018-07-06 19:07:38.168,pres_word_2,WILLOW
+2018-07-06 19:07:42.172,pres_word_2,ANKLE
+2018-07-06 19:07:46.177,pres_word_2,ASH
+2018-07-06 19:07:50.181,pres_word_2,POPLAR
+2018-07-06 19:07:54.186,pres_word_2,FINGER
+2018-07-06 19:07:58.192,pres_word_2,XYLOPHONE
+2018-07-06 19:08:02.197,pres_word_2,HAND
+2018-07-06 19:08:06.202,pres_word_2,LARVA
+2018-07-06 19:08:10.206,pres_word_2,GUITAR
+2018-07-06 19:08:14.212,pres_word_2,BONGOS
+2018-07-06 19:08:18.216,pres_word_2,MONARCH
+2018-07-06 19:10:03.387,exp_event,wl_pres_3_start
+2018-07-06 19:10:03.387,pres_word_3,PELVIS
+2018-07-06 19:10:07.393,pres_word_3,DALLAS
+2018-07-06 19:10:11.395,pres_word_3,TAMBOURINE
+2018-07-06 19:10:15.397,pres_word_3,OVEN
+2018-07-06 19:10:19.402,pres_word_3,STOMACH
+2018-07-06 19:10:23.406,pres_word_3,ROME
+2018-07-06 19:10:27.409,pres_word_3,TUBA
+2018-07-06 19:10:31.410,pres_word_3,HIP
+2018-07-06 19:10:35.416,pres_word_3,MUG
+2018-07-06 19:10:39.419,pres_word_3,BROILER
+2018-07-06 19:10:43.421,pres_word_3,TRUMPET
+2018-07-06 19:10:47.425,pres_word_3,PARIS
+2018-07-06 19:10:51.427,pres_word_3,PICCOLO
+2018-07-06 19:10:55.429,pres_word_3,THERMOMETER
+2018-07-06 19:10:59.434,pres_word_3,ARMS
+2018-07-06 19:11:03.435,pres_word_3,MONTREAL
+2018-07-06 19:12:46.880,exp_event,wl_pres_4_start
+2018-07-06 19:12:46.880,pres_word_4,WOLF
+2018-07-06 19:12:50.886,pres_word_4,ZUCCHINI
+2018-07-06 19:12:54.889,pres_word_4,KIDNEY
+2018-07-06 19:12:58.893,pres_word_4,BOMBAY
+2018-07-06 19:13:02.895,pres_word_4,FOOT
+2018-07-06 19:13:06.898,pres_word_4,AUBERGINE
+2018-07-06 19:13:10.905,pres_word_4,GOAT
+2018-07-06 19:13:14.908,pres_word_4,STOCKHOLM
+2018-07-06 19:13:18.913,pres_word_4,PANTHER
+2018-07-06 19:13:22.917,pres_word_4,SHOULDER
+2018-07-06 19:13:26.921,pres_word_4,TORONTO
+2018-07-06 19:13:30.925,pres_word_4,SQUASH
+2018-07-06 19:13:34.927,pres_word_4,OLIVE
+2018-07-06 19:13:38.931,pres_word_4,MIAMI
+2018-07-06 19:13:42.933,pres_word_4,ELBOW
+2018-07-06 19:13:46.937,pres_word_4,SHEEP
+2018-07-06 19:16:22.909,exp_event,movie_pres_start
+2018-07-06 19:19:11.339,exp_event,movie_pres_end
+2018-07-06 19:19:11.339,movie_src,"[""/static/video/TheTempleofKnowledge.mp4""]"
+2018-07-06 19:23:47.789,exp_event,movie_quiz_start
+2018-07-06 19:24:21.333,exp_event,movie_quiz_submit
+2018-07-06 19:24:21.333,movie_qs,"[u'No', u' library', u' custodian', u' reading', u' professor', u' 1940s', u'2', u' waxed the tops of bookshelves', u' never', u' 1am', u' less than high school', u' quiet']"
+2018-07-06 19:24:44.544,exp_event,vocab_pres_start
+2018-07-06 19:24:44.544,vocab_pres,"[u'bean', u'woman.png', u'WOMAN']"
+2018-07-06 19:24:51.547,vocab_pres,"[u'buachaill', u'boy.png', u'BOY']"
+2018-07-06 19:24:58.554,vocab_pres,"[u'&#250;ll', u'apple.png', u'APPLE']"
+2018-07-06 19:25:05.557,vocab_pres,"[u'bainne', u'milk.png', u'MILK']"
+2018-07-06 19:25:12.562,vocab_pres,"[u'r&#237;s', u'rice.png', u'RICE']"
+2018-07-06 19:25:19.567,vocab_pres,"[u'fear', u'man.png', u'MAN']"
+2018-07-06 19:25:26.572,vocab_pres,"[u'ar&#225;n', u'bread.png', u'BREAD']"
+2018-07-06 19:25:33.577,vocab_pres,"[u'biachl&#225;r', u'menu.png', u'MENU']"
+2018-07-06 19:25:40.581,vocab_pres,"[u'cail&#237;n', u'girl.png', u'GIRL']"
+2018-07-06 19:25:47.585,vocab_pres,"[u'uisce', u'water.png', u'WATER']"
+2018-07-06 19:25:50.078,exp_event,vocab_q_1_start
+2018-07-06 19:25:56.625,vocab_resp,"['bean', u'woman2.png', u'WOMAN', u'bean', [u'cail&#237;n', u'bean', u'fear', u'biachl&#225;r']]"
+2018-07-06 19:25:56.631,exp_event,vocab_q_2_start
+2018-07-06 19:26:01.775,vocab_resp,"['&#250;ll', u'apple2.png', u'APPLE', u'&#250;ll', [u'bean', u'cail&#237;n', u'&#250;ll', u'fear']]"
+2018-07-06 19:26:01.781,exp_event,vocab_q_3_start
+2018-07-06 19:26:05.530,vocab_resp,"['buachaill', u'boy2.png', u'BOY', u'buachaill', [u'bainne', u'&#250;ll', u'cail&#237;n', u'buachaill']]"
+2018-07-06 19:26:05.535,exp_event,vocab_q_4_start
+2018-07-06 19:26:07.446,vocab_resp,"['ar&#225;n', u'bread2.png', u'BREAD', u'ar&#225;n', [u'ar&#225;n', u'uisce', u'&#250;ll', u'buachaill']]"
+2018-07-06 19:26:07.450,exp_event,vocab_q_5_start
+2018-07-06 19:26:15.033,vocab_resp,"['bainne', u'milk2.png', u'MILK', u'bainne', [u'bainne', u'ar&#225;n', u'cail&#237;n', u'bean']]"
+2018-07-06 19:26:15.042,exp_event,vocab_q_6_start
+2018-07-06 19:26:17.672,vocab_resp,"['cail&#237;n', u'girl2.png', u'GIRL', u'cail&#237;n', [u'ar&#225;n', u'cail&#237;n', u'bean', u'bainne']]"
+2018-07-06 19:26:17.676,exp_event,vocab_q_7_start
+2018-07-06 19:26:19.525,vocab_resp,"['fear', u'man2.png', u'MAN', u'fear', [u'buachaill', u'&#250;ll', u'fear', u'bainne']]"
+2018-07-06 19:26:19.530,exp_event,vocab_q_8_start
+2018-07-06 19:26:22.911,vocab_resp,"['uisce', u'water2.png', u'WATER', u'uisce', [u'uisce', u'&#250;ll', u'biachl&#225;r', u'bean']]"
+2018-07-06 19:26:22.916,exp_event,vocab_q_9_start
+2018-07-06 19:26:24.901,vocab_resp,"['r&#237;s', u'rice2.png', u'RICE', u'r&#237;s', [u'bainne', u'r&#237;s', u'bean', u'fear']]"
+2018-07-06 19:26:24.904,exp_event,vocab_q_10_start
+2018-07-06 19:26:31.801,vocab_resp,"['biachl&#225;r', u'menu2.png', u'MENU', u'biachl&#225;r', [u'cail&#237;n', u'bainne', u'bean', u'biachl&#225;r']]"
+2018-07-06 19:26:54.820,spatial_pres_2,"[[120, 360, '/static/images/1.gif', 1], [360, 520, '/static/images/2.gif', 1]]"
+2018-07-06 19:26:54.822,exp_event,spatial_resp_s2_t1_start
+2018-07-06 19:27:09.600,spatial_resp_2,"[[[226, 360, '/static/images/1.gif', 1, 2], [493, 360, '/static/images/2.gif', 1, 2]], [[36, 368, '/static/images/1.gif', 1, 2], [261, 580, '/static/images/2.gif', 1, 2]], [[36, 368, '/static/images/1.gif', 1, 2], [261, 580, '/static/images/2.gif', 1, 2]]]"
+2018-07-06 19:27:21.594,spatial_pres_2,"[[680, 520, '/static/images/1.gif', 2], [280, 440, '/static/images/2.gif', 2]]"
+2018-07-06 19:27:21.597,exp_event,spatial_resp_s2_t2_start
+2018-07-06 19:27:31.007,spatial_resp_2,"[[[226, 360, '/static/images/1.gif', 2, 2], [493, 360, '/static/images/2.gif', 2, 2]], [[511, 601, '/static/images/2.gif', 2, 2], [688, 447, '/static/images/1.gif', 2, 2]], [[688, 447, '/static/images/1.gif', 2, 2], [511, 601, '/static/images/2.gif', 2, 2]]]"
+2018-07-06 19:27:43.106,spatial_pres_2,"[[520, 360, '/static/images/1.gif', 3], [440, 520, '/static/images/2.gif', 3]]"
+2018-07-06 19:27:43.108,exp_event,spatial_resp_s2_t3_start
+2018-07-06 19:27:53.341,spatial_resp_2,"[[[226, 360, '/static/images/1.gif', 3, 2], [493, 360, '/static/images/2.gif', 3, 2]], [[455, 546, '/static/images/2.gif', 3, 2], [531, 403, '/static/images/1.gif', 3, 2]], [[531, 403, '/static/images/1.gif', 3, 2], [455, 546, '/static/images/2.gif', 3, 2]]]"
+2018-07-06 19:28:05.332,spatial_pres_3,"[[280, 360, '/static/images/1.gif', 1], [680, 200, '/static/images/2.gif', 1], [520, 40, '/static/images/3.gif', 1]]"
+2018-07-06 19:28:05.335,exp_event,spatial_resp_s3_t1_start
+2018-07-06 19:28:25.951,spatial_resp_3,"[[[160, 360, '/static/images/1.gif', 1, 3], [360, 360, '/static/images/2.gif', 1, 3], [560, 360, '/static/images/3.gif', 1, 3]], [[689, 196, '/static/images/2.gif', 1, 3], [694, 259, '/static/images/3.gif', 1, 3], [262, 390, '/static/images/1.gif', 1, 3], [486, 35, '/static/images/3.gif', 1, 3]], [[262, 390, '/static/images/1.gif', 1, 3], [689, 196, '/static/images/2.gif', 1, 3], [486, 35, '/static/images/3.gif', 1, 3]]]"
+2018-07-06 19:28:37.213,spatial_pres_3,"[[40, 520, '/static/images/1.gif', 2], [600, 440, '/static/images/2.gif', 2], [200, 360, '/static/images/3.gif', 2]]"
+2018-07-06 19:28:37.215,exp_event,spatial_resp_s3_t2_start
+2018-07-06 19:28:57.449,spatial_resp_3,"[[[160, 360, '/static/images/1.gif', 2, 3], [360, 360, '/static/images/2.gif', 2, 3], [560, 360, '/static/images/3.gif', 2, 3]], [[529, 385, '/static/images/2.gif', 2, 3], [199, 230, '/static/images/3.gif', 2, 3], [101, 349, '/static/images/1.gif', 2, 3], [559, 453, '/static/images/2.gif', 2, 3], [87, 558, '/static/images/1.gif', 2, 3], [155, 337, '/static/images/3.gif', 2, 3], [117, 525, '/static/images/1.gif', 2, 3], [63, 539, '/static/images/1.gif', 2, 3]], [[63, 539, '/static/images/1.gif', 2, 3], [559, 453, '/static/images/2.gif', 2, 3], [155, 337, '/static/images/3.gif', 2, 3]]]"
+2018-07-06 19:29:51.891,spatial_pres_3,"[[360, 40, '/static/images/1.gif', 3], [200, 120, '/static/images/2.gif', 3], [40, 360, '/static/images/3.gif', 3]]"
+2018-07-06 19:29:51.894,exp_event,spatial_resp_s3_t3_start
+2018-07-06 19:30:01.926,spatial_resp_3,"[[[160, 360, '/static/images/1.gif', 3, 3], [360, 360, '/static/images/2.gif', 3, 3], [560, 360, '/static/images/3.gif', 3, 3]], [[95, 402, '/static/images/1.gif', 3, 3], [154, 16, '/static/images/2.gif', 3, 3], [658, 301, '/static/images/3.gif', 3, 3]], [[95, 402, '/static/images/1.gif', 3, 3], [154, 16, '/static/images/2.gif', 3, 3], [658, 301, '/static/images/3.gif', 3, 3]]]"
+2018-07-06 19:30:13.108,spatial_pres_4,"[[120, 360, '/static/images/1.gif', 1], [520, 40, '/static/images/2.gif', 1], [440, 600, '/static/images/3.gif', 1], [680, 200, '/static/images/4.gif', 1]]"
+2018-07-06 19:30:13.111,exp_event,spatial_resp_s4_t1_start
+2018-07-06 19:30:33.620,spatial_resp_4,"[[[120, 360, '/static/images/1.gif', 1, 4], [280, 360, '/static/images/2.gif', 1, 4], [440, 360, '/static/images/3.gif', 1, 4], [600, 360, '/static/images/4.gif', 1, 4]], [[675, 210, '/static/images/4.gif', 1, 4], [410, 551, '/static/images/3.gif', 1, 4], [404, 131, '/static/images/2.gif', 1, 4], [394, 584, '/static/images/3.gif', 1, 4], [33, 293, '/static/images/1.gif', 1, 4], [33, 293, '/static/images/1.gif', 1, 4], [33, 293, '/static/images/1.gif', 1, 4], [33, 293, '/static/images/1.gif', 1, 4], [482, 13, '/static/images/2.gif', 1, 4], [621, 242, '/static/images/4.gif', 1, 4]], [[33, 293, '/static/images/1.gif', 1, 4], [482, 13, '/static/images/2.gif', 1, 4], [394, 584, '/static/images/3.gif', 1, 4], [621, 242, '/static/images/4.gif', 1, 4]]]"
+2018-07-06 19:30:44.819,spatial_pres_4,"[[680, 600, '/static/images/1.gif', 2], [40, 440, '/static/images/2.gif', 2], [520, 360, '/static/images/3.gif', 2], [440, 280, '/static/images/4.gif', 2]]"
+2018-07-06 19:30:44.822,exp_event,spatial_resp_s4_t2_start
+2018-07-06 19:30:56.489,spatial_resp_4,"[[[120, 360, '/static/images/1.gif', 2, 4], [280, 360, '/static/images/2.gif', 2, 4], [440, 360, '/static/images/3.gif', 2, 4], [600, 360, '/static/images/4.gif', 2, 4]], [[433, 299, '/static/images/4.gif', 2, 4], [516, 379, '/static/images/3.gif', 2, 4], [672, 518, '/static/images/1.gif', 2, 4], [18, 372, '/static/images/2.gif', 2, 4]], [[672, 518, '/static/images/1.gif', 2, 4], [18, 372, '/static/images/2.gif', 2, 4], [516, 379, '/static/images/3.gif', 2, 4], [433, 299, '/static/images/4.gif', 2, 4]]]"
+2018-07-06 19:31:10.333,spatial_pres_4,"[[600, 280, '/static/images/1.gif', 3], [280, 520, '/static/images/2.gif', 3], [40, 600, '/static/images/3.gif', 3], [520, 680, '/static/images/4.gif', 3]]"
+2018-07-06 19:31:10.336,exp_event,spatial_resp_s4_t3_start
+2018-07-06 19:31:39.892,spatial_resp_4,"[[[120, 360, '/static/images/1.gif', 3, 4], [280, 360, '/static/images/2.gif', 3, 4], [440, 360, '/static/images/3.gif', 3, 4], [600, 360, '/static/images/4.gif', 3, 4]], [[451, 648, '/static/images/4.gif', 3, 4], [34, 596, '/static/images/3.gif', 3, 4], [218, 244, '/static/images/1.gif', 3, 4], [223, 461, '/static/images/2.gif', 3, 4], [520, 191, '/static/images/1.gif', 3, 4], [440, 720, '/static/images/4.gif', 3, 4], [486, 589, '/static/images/4.gif', 3, 4], [466, 636, '/static/images/4.gif', 3, 4], [463, 646, '/static/images/4.gif', 3, 4]], [[520, 191, '/static/images/1.gif', 3, 4], [223, 461, '/static/images/2.gif', 3, 4], [34, 596, '/static/images/3.gif', 3, 4], [463, 646, '/static/images/4.gif', 3, 4]]]"
+2018-07-06 19:34:11.033,exp_event,spatial_resp_s5_t1_start
+2018-07-06 19:34:11.033,spatial_pres_5,"[[40, 360, '/static/images/1.gif', 1], [600, 120, '/static/images/2.gif', 1], [360, 440, '/static/images/3.gif', 1], [440, 280, '/static/images/4.gif', 1], [200, 680, '/static/images/5.gif', 1]]"
+2018-07-06 19:34:32.330,spatial_resp_5,"[[[93, 360, '/static/images/1.gif', 1, 5], [226, 360, '/static/images/2.gif', 1, 5], [360, 360, '/static/images/3.gif', 1, 5], [493, 360, '/static/images/4.gif', 1, 5], [626, 360, '/static/images/5.gif', 1, 5]], [[215, 634, '/static/images/5.gif', 1, 5], [340, 501, '/static/images/3.gif', 1, 5], [465, 332, '/static/images/4.gif', 1, 5], [582, 181, '/static/images/2.gif', 1, 5], [105, 375, '/static/images/1.gif', 1, 5], [397, 322, '/static/images/4.gif', 1, 5], [230, 486, '/static/images/3.gif', 1, 5], [107, 633, '/static/images/5.gif', 1, 5], [72, 311, '/static/images/1.gif', 1, 5]], [[72, 311, '/static/images/1.gif', 1, 5], [582, 181, '/static/images/2.gif', 1, 5], [230, 486, '/static/images/3.gif', 1, 5], [397, 322, '/static/images/4.gif', 1, 5], [107, 633, '/static/images/5.gif', 1, 5]]]"
+2018-07-06 19:34:44.485,spatial_pres_5,"[[600, 280, '/static/images/1.gif', 2], [680, 440, '/static/images/2.gif', 2], [520, 520, '/static/images/3.gif', 2], [360, 120, '/static/images/4.gif', 2], [120, 680, '/static/images/5.gif', 2]]"
+2018-07-06 19:34:44.486,exp_event,spatial_resp_s5_t2_start
+2018-07-06 19:35:04.264,spatial_resp_5,"[[[93, 360, '/static/images/1.gif', 2, 5], [226, 360, '/static/images/2.gif', 2, 5], [360, 360, '/static/images/3.gif', 2, 5], [493, 360, '/static/images/4.gif', 2, 5], [626, 360, '/static/images/5.gif', 2, 5]], [[363, 147, '/static/images/4.gif', 2, 5], [469, 237, '/static/images/1.gif', 2, 5], [338, 137, '/static/images/4.gif', 2, 5], [442, 241, '/static/images/1.gif', 2, 5], [441, 511, '/static/images/5.gif', 2, 5], [322, 443, '/static/images/3.gif', 2, 5], [545, 337, '/static/images/2.gif', 2, 5], [684, 481, '/static/images/3.gif', 2, 5], [458, 621, '/static/images/5.gif', 2, 5]], [[442, 241, '/static/images/1.gif', 2, 5], [545, 337, '/static/images/2.gif', 2, 5], [684, 481, '/static/images/3.gif', 2, 5], [338, 137, '/static/images/4.gif', 2, 5], [458, 621, '/static/images/5.gif', 2, 5]]]"
+2018-07-06 19:35:15.648,spatial_pres_5,"[[120, 520, '/static/images/1.gif', 3], [600, 360, '/static/images/2.gif', 3], [440, 600, '/static/images/3.gif', 3], [680, 680, '/static/images/4.gif', 3], [520, 280, '/static/images/5.gif', 3]]"
+2018-07-06 19:35:15.650,exp_event,spatial_resp_s5_t3_start
+2018-07-06 19:35:30.879,spatial_resp_5,"[[[93, 360, '/static/images/1.gif', 3, 5], [226, 360, '/static/images/2.gif', 3, 5], [360, 360, '/static/images/3.gif', 3, 5], [493, 360, '/static/images/4.gif', 3, 5], [626, 360, '/static/images/5.gif', 3, 5]], [[460, 258, '/static/images/5.gif', 3, 5], [461, 224, '/static/images/5.gif', 3, 5], [556, 315, '/static/images/2.gif', 3, 5], [108, 647, '/static/images/4.gif', 3, 5], [386, 473, '/static/images/3.gif', 3, 5], [575, 598, '/static/images/4.gif', 3, 5], [33, 363, '/static/images/1.gif', 3, 5]], [[33, 363, '/static/images/1.gif', 3, 5], [556, 315, '/static/images/2.gif', 3, 5], [386, 473, '/static/images/3.gif', 3, 5], [575, 598, '/static/images/4.gif', 3, 5], [461, 224, '/static/images/5.gif', 3, 5]]]"
+2018-07-06 19:35:42.399,spatial_pres_6,"[[40, 520, '/static/images/1.gif', 1], [440, 600, '/static/images/2.gif', 1], [120, 680, '/static/images/3.gif', 1], [520, 280, '/static/images/4.gif', 1], [280, 40, '/static/images/5.gif', 1], [200, 440, '/static/images/6.gif', 1]]"
+2018-07-06 19:35:42.401,exp_event,spatial_resp_s6_t1_start
+2018-07-06 19:36:03.375,spatial_resp_6,"[[[74, 360, '/static/images/1.gif', 1, 6], [188, 360, '/static/images/2.gif', 1, 6], [302, 360, '/static/images/3.gif', 1, 6], [417, 360, '/static/images/4.gif', 1, 6], [531, 360, '/static/images/5.gif', 1, 6], [645, 360, '/static/images/6.gif', 1, 6]], [[36, 401, '/static/images/1.gif', 1, 6], [92, 592, '/static/images/3.gif', 1, 6], [144, 322, '/static/images/6.gif', 1, 6], [271, 511, '/static/images/2.gif', 1, 6], [203, 329, '/static/images/6.gif', 1, 6], [588, 78, '/static/images/5.gif', 1, 6], [139, 92, '/static/images/4.gif', 1, 6], [137, 100, '/static/images/4.gif', 1, 6], [240, 87, '/static/images/4.gif', 1, 6], [476, 92, '/static/images/5.gif', 1, 6]], [[36, 401, '/static/images/1.gif', 1, 6], [271, 511, '/static/images/2.gif', 1, 6], [92, 592, '/static/images/3.gif', 1, 6], [240, 87, '/static/images/4.gif', 1, 6], [476, 92, '/static/images/5.gif', 1, 6], [203, 329, '/static/images/6.gif', 1, 6]]]"
+2018-07-06 19:36:23.260,spatial_pres_6,"[[440, 680, '/static/images/1.gif', 2], [40, 360, '/static/images/2.gif', 2], [200, 520, '/static/images/3.gif', 2], [520, 120, '/static/images/4.gif', 2], [280, 280, '/static/images/5.gif', 2], [120, 600, '/static/images/6.gif', 2]]"
+2018-07-06 19:36:23.263,exp_event,spatial_resp_s6_t2_start
+2018-07-06 19:37:02.887,spatial_resp_6,"[[[74, 360, '/static/images/1.gif', 2, 6], [188, 360, '/static/images/2.gif', 2, 6], [302, 360, '/static/images/3.gif', 2, 6], [417, 360, '/static/images/4.gif', 2, 6], [531, 360, '/static/images/5.gif', 2, 6], [645, 360, '/static/images/6.gif', 2, 6]], [[123, 583, '/static/images/6.gif', 2, 6], [277, 476, '/static/images/3.gif', 2, 6], [114, 337, '/static/images/2.gif', 2, 6], [114, 337, '/static/images/2.gif', 2, 6], [114, 337, '/static/images/2.gif', 2, 6], [74, 360, '/static/images/1.gif', 2, 6], [165, 284, '/static/images/1.gif', 2, 6], [165, 284, '/static/images/1.gif', 2, 6], [260, 215, '/static/images/1.gif', 2, 6], [260, 215, '/static/images/1.gif', 2, 6], [90, 312, '/static/images/2.gif', 2, 6], [90, 312, '/static/images/2.gif', 2, 6], [471, 64, '/static/images/4.gif', 2, 6], [372, 234, '/static/images/5.gif', 2, 6], [533, 633, '/static/images/1.gif', 2, 6], [533, 633, '/static/images/1.gif', 2, 6], [533, 633, '/static/images/1.gif', 2, 6], [533, 633, '/static/images/1.gif', 2, 6], [533, 633, '/static/images/1.gif', 2, 6], [533, 633, '/static/images/1.gif', 2, 6]], [[533, 633, '/static/images/1.gif', 2, 6], [90, 312, '/static/images/2.gif', 2, 6], [277, 476, '/static/images/3.gif', 2, 6], [471, 64, '/static/images/4.gif', 2, 6], [372, 234, '/static/images/5.gif', 2, 6], [123, 583, '/static/images/6.gif', 2, 6]]]"
+2018-07-06 19:37:35.983,spatial_pres_6,"[[360, 40, '/static/images/1.gif', 3], [40, 360, '/static/images/2.gif', 3], [440, 440, '/static/images/3.gif', 3], [600, 680, '/static/images/4.gif', 3], [280, 280, '/static/images/5.gif', 3], [200, 120, '/static/images/6.gif', 3]]"
+2018-07-06 19:37:35.988,exp_event,spatial_resp_s6_t3_start
+2018-07-06 19:38:21.453,spatial_resp_6,"[[[74, 360, '/static/images/1.gif', 3, 6], [188, 360, '/static/images/2.gif', 3, 6], [302, 360, '/static/images/3.gif', 3, 6], [417, 360, '/static/images/4.gif', 3, 6], [531, 360, '/static/images/5.gif', 3, 6], [645, 360, '/static/images/6.gif', 3, 6]], [[351, 142, '/static/images/1.gif', 3, 6], [491, 445, '/static/images/3.gif', 3, 6], [228, 189, '/static/images/6.gif', 3, 6], [297, 373, '/static/images/5.gif', 3, 6], [658, 611, '/static/images/4.gif', 3, 6], [78, 533, '/static/images/2.gif', 3, 6], [154, 88, '/static/images/6.gif', 3, 6], [342, 301, '/static/images/5.gif', 3, 6], [91, 116, '/static/images/6.gif', 3, 6], [406, 290, '/static/images/5.gif', 3, 6]], [[351, 142, '/static/images/1.gif', 3, 6], [78, 533, '/static/images/2.gif', 3, 6], [491, 445, '/static/images/3.gif', 3, 6], [658, 611, '/static/images/4.gif', 3, 6], [406, 290, '/static/images/5.gif', 3, 6], [91, 116, '/static/images/6.gif', 3, 6]]]"
+2018-07-06 19:38:34.162,spatial_pres_7,"[[440, 520, '/static/images/1.gif', 1], [200, 120, '/static/images/2.gif', 1], [360, 600, '/static/images/3.gif', 1], [680, 680, '/static/images/4.gif', 1], [120, 360, '/static/images/5.gif', 1], [600, 200, '/static/images/6.gif', 1], [280, 40, '/static/images/7.gif', 1]]"
+2018-07-06 19:38:34.163,exp_event,spatial_resp_s7_t1_start
+2018-07-06 19:39:30.077,spatial_resp_7,"[[[60, 360, '/static/images/1.gif', 1, 7], [160, 360, '/static/images/2.gif', 1, 7], [260, 360, '/static/images/3.gif', 1, 7], [360, 360, '/static/images/4.gif', 1, 7], [460, 360, '/static/images/5.gif', 1, 7], [560, 360, '/static/images/6.gif', 1, 7], [660, 360, '/static/images/7.gif', 1, 7]], [[226, 114, '/static/images/7.gif', 1, 7], [162, 316, '/static/images/2.gif', 1, 7], [119, 230, '/static/images/2.gif', 1, 7], [222, 79, '/static/images/7.gif', 1, 7], [542, 92, '/static/images/1.gif', 1, 7], [99, 381, '/static/images/5.gif', 1, 7], [291, 72, '/static/images/7.gif', 1, 7], [158, 199, '/static/images/2.gif', 1, 7], [62, 355, '/static/images/5.gif', 1, 7], [367, 472, '/static/images/1.gif', 1, 7], [276, 595, '/static/images/3.gif', 1, 7], [213, 545, '/static/images/3.gif', 1, 7], [313, 440, '/static/images/1.gif', 1, 7], [522, 613, '/static/images/4.gif', 1, 7], [680, 22, '/static/images/6.gif', 1, 7], [329, 538, '/static/images/1.gif', 1, 7], [97, 103, '/static/images/2.gif', 1, 7], [189, 220, '/static/images/2.gif', 1, 7]], [[329, 538, '/static/images/1.gif', 1, 7], [189, 220, '/static/images/2.gif', 1, 7], [213, 545, '/static/images/3.gif', 1, 7], [522, 613, '/static/images/4.gif', 1, 7], [62, 355, '/static/images/5.gif', 1, 7], [680, 22, '/static/images/6.gif', 1, 7], [291, 72, '/static/images/7.gif', 1, 7]]]"
+2018-07-06 19:39:58.366,spatial_pres_7,"[[680, 120, '/static/images/1.gif', 2], [440, 360, '/static/images/2.gif', 2], [280, 600, '/static/images/3.gif', 2], [40, 200, '/static/images/4.gif', 2], [360, 40, '/static/images/5.gif', 2], [600, 680, '/static/images/6.gif', 2], [120, 280, '/static/images/7.gif', 2]]"
+2018-07-06 19:39:58.368,exp_event,spatial_resp_s7_t2_start
+2018-07-06 19:40:44.518,spatial_resp_7,"[[[60, 360, '/static/images/1.gif', 2, 7], [160, 360, '/static/images/2.gif', 2, 7], [260, 360, '/static/images/3.gif', 2, 7], [360, 360, '/static/images/4.gif', 2, 7], [460, 360, '/static/images/5.gif', 2, 7], [560, 360, '/static/images/6.gif', 2, 7], [660, 360, '/static/images/7.gif', 2, 7]], [[277, 585, '/static/images/3.gif', 2, 7], [540, 617, '/static/images/6.gif', 2, 7], [631, 178, '/static/images/1.gif', 2, 7], [24, 166, '/static/images/4.gif', 2, 7], [113, 162, '/static/images/7.gif', 2, 7], [348, 0, '/static/images/5.gif', 2, 7], [367, 284, '/static/images/2.gif', 2, 7], [71, 545, '/static/images/3.gif', 2, 7], [629, 545, '/static/images/6.gif', 2, 7]], [[631, 178, '/static/images/1.gif', 2, 7], [367, 284, '/static/images/2.gif', 2, 7], [71, 545, '/static/images/3.gif', 2, 7], [24, 166, '/static/images/4.gif', 2, 7], [348, 0, '/static/images/5.gif', 2, 7], [629, 545, '/static/images/6.gif', 2, 7], [113, 162, '/static/images/7.gif', 2, 7]]]"
+2018-07-06 19:40:56.016,spatial_pres_7,"[[440, 200, '/static/images/1.gif', 3], [520, 520, '/static/images/2.gif', 3], [680, 600, '/static/images/3.gif', 3], [40, 120, '/static/images/4.gif', 3], [600, 40, '/static/images/5.gif', 3], [120, 440, '/static/images/6.gif', 3], [280, 680, '/static/images/7.gif', 3]]"
+2018-07-06 19:40:56.017,exp_event,spatial_resp_s7_t3_start
+2018-07-06 19:41:10.545,spatial_resp_7,"[[[60, 360, '/static/images/1.gif', 3, 7], [160, 360, '/static/images/2.gif', 3, 7], [260, 360, '/static/images/3.gif', 3, 7], [360, 360, '/static/images/4.gif', 3, 7], [460, 360, '/static/images/5.gif', 3, 7], [560, 360, '/static/images/6.gif', 3, 7], [660, 360, '/static/images/7.gif', 3, 7]], [[28, 58, '/static/images/1.gif', 3, 7], [103, 279, '/static/images/4.gif', 3, 7], [580, 570, '/static/images/6.gif', 3, 7], [383, 567, '/static/images/5.gif', 3, 7], [644, 60, '/static/images/3.gif', 3, 7], [326, 88, '/static/images/7.gif', 3, 7], [449, 373, '/static/images/2.gif', 3, 7]], [[28, 58, '/static/images/1.gif', 3, 7], [449, 373, '/static/images/2.gif', 3, 7], [644, 60, '/static/images/3.gif', 3, 7], [103, 279, '/static/images/4.gif', 3, 7], [383, 567, '/static/images/5.gif', 3, 7], [580, 570, '/static/images/6.gif', 3, 7], [326, 88, '/static/images/7.gif', 3, 7]]]"
+2018-07-06 19:49:30.643,exp_event,vocab_q_1_delay_start
+2018-07-06 19:49:37.501,vocab_resp_delay,"['biachl&#225;r', u'milk3.png', u'MILK', u'bainne', [u'cail&#237;n', u'bainne', u'biachl&#225;r', u'bean'], 6.858]"
+2018-07-06 19:49:37.506,exp_event,vocab_q_2_delay_start
+2018-07-06 19:49:44.115,vocab_resp_delay,"['ar&#225;n', u'apple3.png', u'APPLE', u'&#250;ll', [u'r&#237;s', u'bainne', u'ar&#225;n', u'&#250;ll'], 6.609]"
+2018-07-06 19:49:44.124,exp_event,vocab_q_3_delay_start
+2018-07-06 19:49:46.349,vocab_resp_delay,"['uisce', u'water3.png', u'WATER', u'uisce', [u'uisce', u'r&#237;s', u'biachl&#225;r', u'ar&#225;n'], 2.225]"
+2018-07-06 19:49:46.354,exp_event,vocab_q_4_delay_start
+2018-07-06 19:49:49.057,vocab_resp_delay,"['buachaill', u'menu3.png', u'MENU', u'biachl&#225;r', [u'r&#237;s', u'buachaill', u'biachl&#225;r', u'fear'], 2.703]"
+2018-07-06 19:49:49.059,exp_event,vocab_q_5_delay_start
+2018-07-06 19:49:50.680,vocab_resp_delay,"['cail&#237;n', u'girl3.png', u'GIRL', u'cail&#237;n', [u'bainne', u'cail&#237;n', u'fear', u'&#250;ll'], 1.621]"
+2018-07-06 19:49:50.682,exp_event,vocab_q_6_delay_start
+2018-07-06 19:49:52.859,vocab_resp_delay,"['ar&#225;n', u'bread3.png', u'BREAD', u'ar&#225;n', [u'uisce', u'fear', u'ar&#225;n', u'r&#237;s'], 2.177]"
+2018-07-06 19:49:52.864,exp_event,vocab_q_7_delay_start
+2018-07-06 19:49:55.310,vocab_resp_delay,"['bean', u'woman3.png', u'WOMAN', u'bean', [u'bainne', u'biachl&#225;r', u'bean', u'r&#237;s'], 2.446]"
+2018-07-06 19:49:55.317,exp_event,vocab_q_8_delay_start
+2018-07-06 19:49:57.989,vocab_resp_delay,"['fear', u'man3.png', u'MAN', u'fear', [u'uisce', u'fear', u'bainne', u'ar&#225;n'], 2.672]"
+2018-07-06 19:49:57.994,exp_event,vocab_q_9_delay_start
+2018-07-06 19:49:59.745,vocab_resp_delay,"['r&#237;s', u'rice3.png', u'RICE', u'r&#237;s', [u'buachaill', u'r&#237;s', u'fear', u'ar&#225;n'], 1.751]"
+2018-07-06 19:49:59.751,exp_event,vocab_q_10_delay_start
+2018-07-06 19:50:02.561,vocab_resp_delay,"['bainne', u'boy3.png', u'BOY', u'buachaill', [u'fear', u'buachaill', u'bainne', u'r&#237;s'], 2.81]"
+2018-07-06 19:50:03.990,exp_event,ps_q1_start
+2018-07-06 19:50:17.210,fitbit_clear,Clear
+2018-07-06 19:50:17.210,movie_clear,Very clear
+2018-07-06 19:50:17.210,overall_clear,Clear
+2018-07-06 19:50:17.210,survey_clear,Very clear
+2018-07-06 19:50:17.210,wordlist_clear,Clear
+2018-07-06 19:50:17.230,exp_event,ps_q2_start
+2018-07-06 19:50:27.448,delayed_movie_clear,Very clear
+2018-07-06 19:50:27.448,delayed_vocab_clear,Very clear
+2018-07-06 19:50:27.448,delayed_wordlist_clear,Very clear
+2018-07-06 19:50:27.448,spatial_clear,Very clear
+2018-07-06 19:50:27.448,vocab_clear,Clear
+2018-07-06 19:50:27.450,exp_event,ps_clear_text_start
+2018-07-06 19:50:33.231,delayed_movie_clear_text, 
+2018-07-06 19:50:33.231,delayed_vocab_clear_text, 
+2018-07-06 19:50:33.231,delayed_wordlist_clear_text, 
+2018-07-06 19:50:33.231,fitbit_clear_text, 
+2018-07-06 19:50:33.231,movie_clear_text, 
+2018-07-06 19:50:33.231,overall_clear_text, 
+2018-07-06 19:50:33.231,spatial_clear_text, 
+2018-07-06 19:50:33.231,survey_clear_text, 
+2018-07-06 19:50:33.231,vocab_clear_text, 
+2018-07-06 19:50:33.231,wordlist_clear_text, 
+2018-07-06 19:50:33.250,exp_event,ps_q3_start
+2018-07-06 19:50:46.945,movie_difficult,Very easy
+2018-07-06 19:50:46.945,spatial_difficult,Medium
+2018-07-06 19:50:46.945,vocab_difficult,Medium
+2018-07-06 19:50:46.945,wordlist_difficult,Difficult
+2018-07-06 19:50:46.958,exp_event,ps_q4_start
+2018-07-06 19:50:58.002,delayed_movie_difficult,Very easy
+2018-07-06 19:50:58.002,delayed_vocab_difficult,Difficult
+2018-07-06 19:50:58.002,delayed_wordlist_difficult,Difficult
+2018-07-06 19:50:58.004,exp_event,ps_difficult_text_start
+2018-07-06 19:51:29.499,delayed_movie_difficult_text, 
+2018-07-06 19:51:29.499,delayed_vocab_difficult_text, 
+2018-07-06 19:51:29.499,delayed_wordlist_difficult_text,  i am not good at word recall in general
+2018-07-06 19:51:29.499,movie_difficult_text, 
+2018-07-06 19:51:29.499,spatial_difficult_text, 
+2018-07-06 19:51:29.499,vocab_difficult_text, 
+2018-07-06 19:51:29.499,wordlist_difficult_text, i am not good at word recall in general
+2018-07-06 19:51:29.500,exp_event,feedback_q_start
+2018-07-06 19:51:31.761,feedback, 
+2018-07-06 19:51:40.198,exp_event,exp_end
+2018-07-06 23:05:42.146,exp_event,wl_recall_1_start
+2018-07-06 23:05:42.146,rec_word_1,DAISY
+2018-07-06 23:05:46.833,rec_word_1,SUNFLOWER
+2018-07-06 23:05:50.205,rec_word_1,UTAH
+2018-07-06 23:05:51.787,rec_word_1,MAINE
+2018-07-06 23:05:54.038,rec_word_1,SKILLET
+2018-07-06 23:05:56.066,rec_word_1,GIRDLE
+2018-07-06 23:05:59.147,rec_word_1,NARCISSUS
+2018-07-06 23:06:00.646,rec_word_1,KNIFE
+2018-07-06 23:06:03.075,rec_word_1,DRESS
+2018-07-06 23:06:06.148,rec_word_1,TOASTER
+2018-07-06 23:06:15.527,rec_word_1,ARIZONA
+2018-07-06 23:06:16.976,rec_word_1,MAINE
+2018-07-06 23:06:48.043,rec_word_1,ARIZONA
+2018-07-06 23:07:06.510,rec_word_1,
+2018-07-06 23:08:31.552,exp_event,wl_recall_2_start
+2018-07-06 23:08:31.552,rec_word_2,BONGOS
+2018-07-06 23:08:33.740,rec_word_2,MONARCH
+2018-07-06 23:08:36.612,rec_word_2,ACCORDIAN
+2018-07-06 23:08:42.682,rec_word_2,XYLOPHONE
+2018-07-06 23:08:44.760,rec_word_2,LARVA
+2018-07-06 23:08:51.916,rec_word_2,ASH
+2018-07-06 23:09:49.048,rec_word_2,
+2018-07-06 23:11:08.995,exp_event,wl_recall_3_start
+2018-07-06 23:11:08.995,rec_word_3,OVEN
+2018-07-06 23:11:09.128,rec_word_3,
+2018-07-06 23:11:12.364,rec_word_3,STOMACH
+2018-07-06 23:11:14.687,rec_word_3,PICCOLO
+2018-07-06 23:11:24.476,rec_word_3,MONTREAL
+2018-07-06 23:11:30.453,rec_word_3,TUBA
+2018-07-06 23:11:34.383,rec_word_3,PARIS
+2018-07-06 23:11:55.529,rec_word_3,TEMPERATURE
+2018-07-06 23:12:00.967,rec_word_3,TUBA
+2018-07-06 23:12:34.265,rec_word_3,
+2018-07-06 23:13:57.339,exp_event,wl_recall_4_start
+2018-07-06 23:13:57.339,rec_word_4,MIAMI
+2018-07-06 23:13:59.213,rec_word_4,WOLD
+2018-07-06 23:14:02.600,rec_word_4,WOLF
+2018-07-06 23:14:04.699,rec_word_4,SHEEP
+2018-07-06 23:14:08.525,rec_word_4,ZUCHINNI
+2018-07-06 23:14:10.977,rec_word_4,SQUASH
+2018-07-06 23:14:15.112,rec_word_4,AUBERGINE
+2018-07-06 23:15:17.769,rec_word_4,
+2018-07-06 23:20:59.271,exp_event,movie_recall_start
+2018-07-06 23:20:59.271,movie_sent_recall,"A MAN TOLD HIS STORY ABOUT GROWING UP LIVING IN THE LIBRARY. WHEN HE WAS REALLY LITTLE, AT THE DINNER TABLE, HE TOLD HID PARENTS ""I'M SO GLAD WE'RE RICH"", AND THE PARENTS TOLD HIM THEY WERE POOR."
+2018-07-06 23:21:35.564,movie_sent_recall,"THE DAD THEN GOT A JOB CLEANING THE LOCAL LIBRARY, AND THEY MOVED IN TO THE APARTMENT ON TOP."
+2018-07-06 23:22:03.755,movie_sent_recall,HIS DAD KEPT THE LIBRARY SPOTLESS - EVERYTHING WAS SWEPT AND MOPPED AND WAXED.
+2018-07-06 23:22:38.082,movie_sent_recall,THE BOY WAS EMBARRASSED ABOUT LIVING THERE AT FIRST - HE JUST WANTED TO LIVE IN A HOUSE LIKE A NORMAL KID - BUT HE GREW TO LOVE IT.
+2018-07-06 23:22:51.138,movie_sent_recall,LIVING IN THE LIBRARY ENRICHED HIS EDUCATION.
+2018-07-06 23:23:14.594,movie_sent_recall,"HE ENDED UP BEING THE FIRST IN HIS FAMILY TO GRADUATE HIGH SCHOOL, THE GRADUATE COLLEGE."
+2018-07-06 23:23:27.734,movie_sent_recall,HE MOVED ON TO BE A COLLEGE PROFESSOR- HIS DAD WAS SO PROUD OF HIM.
+2018-07-06 23:23:42.561,movie_sent_recall,HE CREDITS HIS SUCCESSES TO HAVING GROWN UP IN THE LIBRARRY.
+2018-07-06 23:23:44.455,movie_sent_recall,
+2018-07-06 23:41:23.444,exp_event,wl_recall_delay_start
+2018-07-06 23:41:23.444,rec_word_delay,ASH
+2018-07-06 23:41:27.794,rec_word_delay,ACCORDIAN
+2018-07-06 23:41:33.627,rec_word_delay,MONARCH
+2018-07-06 23:41:36.687,rec_word_delay,ARIZONA
+2018-07-06 23:41:38.996,rec_word_delay,UTAH
+2018-07-06 23:41:40.404,rec_word_delay,MAINE
+2018-07-06 23:41:44.776,rec_word_delay,BONGOS
+2018-07-06 23:41:49.870,rec_word_delay,SPATULA
+2018-07-06 23:41:53.440,rec_word_delay,DRESS
+2018-07-06 23:43:22.190,rec_word_delay,GIRDLE
+2018-07-06 23:43:29.344,rec_word_delay,NARCISSUS
+2018-07-06 23:44:18.372,rec_word_delay,
+2018-07-06 23:45:38.066,exp_event,movie_delay_recall_start
+2018-07-06 23:45:38.066,movie_sent_recall_delay,"A MAN REMEMBERED, WHEN HE WAS A KID, TELLING HIS PARENTS HE WAS GLAD THEY WERE RICH - THEY RESPONDED THAT THEY WERE POOR."
+2018-07-06 23:46:10.487,movie_sent_recall_delay,"HIS DAD GOT A JOB SHORTLY AFTER CLEANING THE LOCAL LIBRARY, AND THEY MOVED INTO IT."
+2018-07-06 23:46:50.175,movie_sent_recall_delay,THE MAN REMEMBERS BEING EMBARASSED OF LIVING THERE - HE THOUGHT PEOPLE WOULD MAKE FUN OF HIM FOR LIVING IN THE LIBRARY.
+2018-07-06 23:47:11.264,movie_sent_recall_delay,HIS DAD KEPT THE LIBRARY SPOTLESS - EVEN WAXING THE TOPS OF THE BOOKCASES.
+2018-07-06 23:47:46.554,movie_sent_recall_delay,"THEN MAN LEARNED A LOT FROM LIVING THERE, AND WENT ON TO BE THE FIRST IN HIS FAMILY TO GRADUATE HIGH SCHOOL, THEN COLLEGE"
+2018-07-06 23:47:51.970,movie_sent_recall_delay,HE BECAME A PROFESSOR.
+2018-07-06 23:48:14.822,movie_sent_recall_delay,HE CREDITS A LOT OF HIS SUCCESS TO HAVING LIVED IN THE LIBRARY.
+2018-07-06 23:49:25.893,movie_sent_recall_delay,

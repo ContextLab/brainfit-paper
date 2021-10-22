@@ -1,0 +1,81 @@
+﻿exp_event,description
+exp_start,start of experiment
+birthyear_start,start of birthyear dropdown survey page
+gender_start,start of gender survey page
+degree_start,start of degree survey page
+race_start,start of race survey page
+fluent_langs_start,start of fluent languages survey page
+familiar_langs_start,start of familiar languages survey page
+impair_start,start of uncorrected impairments survey page
+recent_meds_injuries_start,start of medications and recent injuries survey page
+alert_stress_start,start of alertness and stress survey page
+sleep_hrs_start,start of sleep hours survey page
+coffee_water_start,start of coffee and water intake survey page
+setting_activity_start,start of living setting and job activity survey page
+exercise_today_plan_start,start of survey page for questions on whether the user has exercised today or plans to exercise later
+exercise_freq_start,start of exercise frequency survey page
+exercise_tracker_motiv_start,start of exercise and tracker motivation survey page
+tracker_features_start,start of tracker features utilized by user survey page
+tracker_motiv_start,start of tracker motivation survey page
+wl_pres_1_start,start of first word list presentation
+wl_recall_1_start,start of first word list recall
+wl_pres_2_start,start of second word list presentation
+wl_recall_2_start,start of second word list recall
+wl_pres_3_start,start of third word list presentation
+wl_recall_3_start,start of third word list recall
+wl_pres_4_start,start of fourth word list presentation
+wl_recall_4_start,start of fourth word list recall
+movie_pres_start,start of movie presentation
+movie_pres_end,end of movie presentation
+movie_recall_start,beginning of movie sentence recall
+movie_quiz_start,beginning of movie quiz section
+movie_quiz_submit,end of movie quiz section
+vocab_pres_start,beginning of vocabulary pairs presentation 
+vocab_q_1_start,begnning of first vocabulary question
+vocab_q_2_start,begnning of second vocabulary question
+vocab_q_3_start,begnning of third vocabulary question
+vocab_q_4_start,begnning of fourth vocabulary question
+vocab_q_5_start,begnning of fifth vocabulary question
+vocab_q_6_start,begnning of sixth vocabulary question
+vocab_q_7_start,begnning of seventh vocabulary question
+vocab_q_8_start,begnning of eighth vocabulary question
+vocab_q_9_start,begnning of ninth vocabulary question
+vocab_q_10_start,begnning of tenth vocabulary question
+spatial_resp_s2_t1_start,"beginning of response to first spatial trial, 2 shapes"
+spatial_resp_s2_t2_start,"beginning of response to second spatial trial, 2 shapes"
+spatial_resp_s2_t3_start,"beginning of response to third spatial trial, 2 shapes"
+spatial_resp_s3_t1_start,"beginning of response to first spatial trial, 3 shapes"
+spatial_resp_s3_t2_start,"beginning of response to second spatial trial, 3 shapes"
+spatial_resp_s3_t3_start,"beginning of response to third spatial trial, 3 shapes"
+spatial_resp_s4_t1_start,"beginning of response to first spatial trial, 4 shapes"
+spatial_resp_s4_t2_start,"beginning of response to second spatial trial, 4 shapes"
+spatial_resp_s4_t3_start,"beginning of response to third spatial trial, 4 shapes"
+spatial_resp_s5_t1_start,"beginning of response to first spatial trial, 5 shapes"
+spatial_resp_s5_t2_start,"beginning of response to second spatial trial, 5 shapes"
+spatial_resp_s5_t3_start,"beginning of response to third spatial trial, 5 shapes"
+spatial_resp_s6_t1_start,"beginning of response to first spatial trial, 6 shapes"
+spatial_resp_s6_t2_start,"beginning of response to second spatial trial, 6 shapes"
+spatial_resp_s6_t3_start,"beginning of response to third spatial trial, 6 shapes"
+spatial_resp_s7_t1_start,"beginning of response to first spatial trial, 7 shapes"
+spatial_resp_s7_t2_start,"beginning of response to second spatial trial, 7 shapes"
+spatial_resp_s7_t3_start,"beginning of response to third spatial trial, 7 shapes"
+wl_recall_delay_start,beginning of delayed word list recall
+movie_delay_recall_start,beginning of delayed movie sentence recall
+vocab_q_1_delay_start,begnning of first delayed vocabulary question
+vocab_q_2_delay_start,begnning of second delayed vocabulary question
+vocab_q_3_delay_start,begnning of third delayed vocabulary question
+vocab_q_4_delay_start,begnning of fourth delayed vocabulary question
+vocab_q_5_delay_start,begnning of fifth delayed vocabulary question
+vocab_q_6_delay_start,begnning of sixth delayed vocabulary question
+vocab_q_7_delay_start,begnning of seventh delayed vocabulary question
+vocab_q_8_delay_start,begnning of eighth delayed vocabulary question
+vocab_q_9_delay_start,begnning of ninth delayed vocabulary question
+vocab_q_10_delay_start,begnning of tenth delayed vocabulary question
+ps_q1_start,start of first page of post-survey questions 
+ps_q2_start,start of second page of post-survey questions 
+ps_clear_text_start,start of text-entry of post-survey questions on instructions clarity
+ps_q3_start,start of third page of post-survey questions 
+ps_q4_start,start of fourth page of post-survey questions 
+ps_difficult_text_start,start of text-entry of post-survey questions on section difficulty
+feedback_q_start,start of overall experiment feedback by users
+exp_end,ending time of experiment

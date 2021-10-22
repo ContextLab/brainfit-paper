@@ -1,0 +1,115 @@
+﻿variable name,value type ,description
+bmi,float,"BMI values, calculated by Fitbit, based on weights entered by the user"
+bodyfat,int ,"body fat values, if reported by user"
+cal,int ,calories expended total
+cal_bmr,int ,"calorie expended by user's basal metabolic rate (BMR), excluding activities and calculated by Fitbit"
+distance,float,"distance travelled calculated by Fitbit, based on steps and stride length"
+sleep_efficiency,int ,efficiency score determined by Fitbit for sleep log
+sleep_duration,int ,"sleep duration calculated by Fitbit, number of milliseconds slept for sleep log"
+sed_mins,int ,number of minutes during the day determined by Fitbit to be sedentary
+light_act_mins,int ,number of minutes during the day determined by Fitbit to be lightly active
+fair_act_mins,int ,number of minutes during the day determined by Fitbit to be fairly active
+very_act_mins,int ,number of minutes during the day determined by Fitbit to be very active
+water_log,int ,"number of water cups drank during the day, logged by user "
+food_cal_log,int ,"number of calories intaken by food consumption, logged by user"
+steps,int ,number of steps taken by the user in a given day
+weight,float,"weight, in kg, input by user"
+resting_HR,int ,resting heart rate value measured by Fitbit device for a given day
+oor_minval,int ,"minimum value of 'out of range' heart rate zone, calculated by Fitbit as < 50% of max HR (220-age) "
+oor_maxval,int ,"maximum value of 'out of range' heart rate zone, calculated by Fitbit as 50% of max HR (220-age) "
+oor_mins,int ,minutes spent in 'out of range' heart rate zone 
+oor_cals,float,calories expended in 'out of range' heart rate zone 
+fb_minval,int ,"minimum value of 'fat burn' heart rate zone, calculated by Fitbit as 50% of max HR (220-age) "
+fb_maxval,int ,"maximum value of 'fat burn' heart rate zone, calculated by Fitbit as 69% of max HR (220-age) "
+fb_mins,int ,minutes spent in 'fat burn' heart rate zone 
+fb_cals,float,calories expended in 'fat burn' heart rate zone 
+cardio_minval,int ,"minimum value of 'cardio' heart rate zone, calculated by Fitbit as 70% of max HR (220-age) "
+cardio_maxval,int ,"maximum value of 'cardio' heart rate zone, calculated by Fitbit as 84% of max HR (220-age) "
+cardio_mins,int ,minutes spent in 'cardio' heart rate zone 
+cardio_cals,float,calories expended in 'cardio' heart rate zone 
+peak_minval,int ,"minimum value of 'peak' heart rate zone, calculated by Fitbit as 85% of max HR (220-age) "
+peak_maxval,int ,"maximum value of 'peak' heart rate zone, calculated by Fitbit as >85% of max HR (220-age) "
+peak_mins,int ,minutes spent in 'peak' heart rate zone 
+peak_cals,float,calories expended in peak' heart rate zone 
+elevation,int ,"elevation climbed by user for a given day, in meters"
+floors,int ,"number of floors climbed by user for a given day, equal to elevation/3"
+todayHRval,int ,second-resolution heart rate data from 24 hours prior to completing task (if present); typicaly in 5-10 second sample bins
+device,str,specific Fitbit device(s) worn by user to track metrics
+battery ,str,charge level of battery on last sync
+batteryLevel,int ,percent charge of battery on last sync
+lastSync,str,date and time of last sync of Fitbit data and application
+comp_info,str,"information about browser and computer type, will help with understanding any debugging/display issues reported"
+UTC,int ,"epoch timestamp of experiment initialization, used to calculate timestamps for all subsequent sections"
+exp_event,str,"event markers throughout the experiment, see additional file for specific event descriptors "
+birthyear ,int ,value of birth year selected by user
+gender,str,value of gender identification selected by user
+degree ,str,value of highest degree obtained selected by user 
+race,array,array of identifying races selected by user
+fluent_langs,array,array of fluent languages spoken by user
+familiar_langs,array,array of familiar languages (learned somewhat) spoken or read by the user 
+color_vision,string,option selected by user regarding whether has normal color vision
+uncorr_impair,string,option selected by user regarding whether has any uncorrected vision impairments 
+recent_meds_injuries,string,any text entered by user reporting medications or recent injuries that may affect ability to perform task
+current_stress,string,option selected by user of self-reported current stress level
+typical_stress,string,option selected by user of self-reported typical stress level
+current_alert,string,option selected by user of self-reported current alertness level
+sleep_hrs,int ,number of hours of sleep the past night reported by the user
+water_cups,int ,number of water cups drank during the current day reported by the user 
+coffee_cups,int ,number of coffee cups drank during the current day reported by the user 
+live_setting,str,reported living setting reported by user
+job_activity,str,amount of activity typically reported by users required for job
+exercise_today,str,yes or no response to whether the user has exercised today
+exercise_plan,str,yes or no response to whether the user plans to exercise later today
+exercise_freq,str,"how often the user typically exercises, per week"
+tracker_sync_today,str,yes or no response to whether have synced tracker to app today
+tracker_wear_freq,str,how often the user typically remembers to wear their fitness tracker
+exercise_motiv,str,selected primary motivation for wearing fitness tracker
+tracker_features,array,which features of Fitbit trackers the user regularly utilizes 
+tracker_motiv,str,text entry on why user is motivated to wear fitness tracker 
+pres_word,str,word presented on screen at each time point for word-list task
+rec_word,str,words recalled by a user via text entry following presentation of word list 
+movie_src ,str,source file of movie presented to user for movie section of task
+movie_sent_recall,str,"each sentence entered by user after viewing movie, accounting what they remember happening"
+movie_qs,array,all responses to page of 10 movie questions accounting both gist and detail information from movie
+vocab_pres,array,"array containing the (1) Irish word presented, (2) source file of image presented, and (3) translation of the word displayed to user for vocab-pair section"
+vocab_resp,array ,"array containing the (1) vocabulary option selected for each question during the vocab-pairs quiz, (2) the source file of the image presented, (3) the correct selection, and (4)options displayed to users"
+spatial_pres,array,array containing the (1) x and (2) y coordinates of the specified shape (image source in (3)) for trial number noted in (4); number of sub-arrays denotes number of shapes displayed per page
+spatial_resp,array,"array containing three sub-arrays - initial posiitons of each icon in the center of the page during the move prompt, the number of moves and order of icon selection during the shape arrangement, and the final locations of each of the shapes as submitted; each contain the (1) x and (2) y coordinates of the specified shape (image source in (3)) for shape number noted in (4) and trial number noted in position (5)"
+rec_word_delay,str,words recalled by a user via text entry after all word lists and experiment delay
+movie_sent_recall_delay,str ,"each sentence entered by user after a delay, accounting what they remember happening in the movie they viewed"
+vocab_resp_q_delay,array,"array containing the (1) vocabulary option selected for each question during the vocab-pairs quiz, (2) the source file of the image presented, (3) the correct selection, and (4)options displayed to users"
+fitbit_clear,str,selected option for how clear the instructions for this section were
+movie_clear,str,selected option for how clear the instructions for this section were
+overall_clear,str,selected option for how clear the instructions for this section were
+survey_clear,str,selected option for how clear the instructions for this section were
+wordlist_clear,str,selected option for how clear the instructions for this section were
+delayed_movie_clear,str,selected option for how clear the instructions for this section were
+delayed_vocab_clear,str,selected option for how clear the instructions for this section were
+delayed_wordlist_clear,str,selected option for how clear the instructions for this section were
+spatial_clear,str,selected option for how clear the instructions for this section were
+vocab_clear,str,selected option for how clear the instructions for this section were
+delayed_movie_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+delayed_vocab_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+delayed_wordlist_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+fitbit_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+movie_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+overall_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+spatial_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+survey_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+vocab_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+wordlist_clear_text,str,any text entered by user related to sections that were marked as unclear or very unclear 
+movie_difficult,str,selected option for how difficult this section was
+spatial_difficult,str,selected option for how difficult this section was
+vocab_difficult,str,selected option for how difficult this section was
+wordlist_difficult,str,selected option for how difficult this section was
+delayed_movie_difficult,str,selected option for how difficult this section was
+delayed_vocab_difficult,str,selected option for how difficult this section was
+delayed_wordlist_difficult,str,selected option for how difficult this section was
+delayed_movie_difficult_text,str,any text entered by user related to sections that were marked as difficult or very difficult
+delayed_vocab_difficult_text,str,any text entered by user related to sections that were marked as difficult or very difficult
+delayed_wordlist_difficult_text,str,any text entered by user related to sections that were marked as difficult or very difficult
+movie_difficult_text,str,any text entered by user related to sections that were marked as difficult or very difficult
+spatial_difficult_text,str,any text entered by user related to sections that were marked as difficult or very difficult
+vocab_difficult_text,str,any text entered by user related to sections that were marked as difficult or very difficult
+wordlist_difficult_text,str,any text entered by user related to sections that were marked as difficult or very difficult
+feedback,str,additional feedback provided by the user 
