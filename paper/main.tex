@@ -50,33 +50,36 @@
 \maketitle
 
 \begin{abstract}
- Physical exercise can benefit both physical and mental well-being.
+  Physical exercise can benefit both physical and mental well-being.
   Different forms of exercise (i.e., aerobic versus anaerobic; running
-  versus walking versus swimming versus yoga; high-intensity interval
-  training versus endurance workouts; etc.) impact physical fitness
-  in different ways.  For example, running may substantially impact
-  leg and heart strength but only moderately impact arm strength. We
+  versus walking, swimming, or yoga; high-intensity interval training
+  versus endurance workouts; etc.) impact physical fitness in
+  different ways.  For example, running may substantially impact leg
+  and heart strength but only moderately impact arm strength. We
   hypothesized that the mental benefits of exercise might be similarly
   differentiated.  We focused specifically on how different forms of
   exercise might related to different aspects of memory and mental
-  health.  To test our hypothesis, we collected roughly a century's
-  worth of fitness data (in aggregate).  We then asked participants to
+  health.  To test our hypothesis, we collected (in aggregate) roughly
+  a century's worth of fitness data.  We then asked participants to
   fill out surveys asking them to self-report on different aspects of
   their mental health.  We also asked participants to engage in a
   battery of memory tasks that tested their short and long term
-  episodic, semantic, and spatial memory.  We found that participants
-  with similar exercise habits and fitness profiles tended to also
-  exhibit similar mental health and task performance profiles.
+  episodic, semantic, and spatial memory performance.  We found that
+  participants with similar exercise habits and fitness profiles
+  tended to also exhibit similar mental health and task performance
+  profiles.  These effects were task-specific in that different
+  exercise patterns or fitness characteristics varied with different
+  aspects of memory, on different tasks.
 \end{abstract}
 
 \section*{Introduction}
-Engaging in physical activity (exercise) can improve our physical
-fitness by increasing muscle strength~\citep{RogeEvan93, Lind79,
-  CranEtal13, Knut07}, increasing bone density~\citep{ChilEtal12,
-  BassRams94, LaynNels99}, increasing cardiovascular
-performance~\citep{MaioEtal00, PollEtal00}, increasing lung
-capacity~\citep{LazoEtal16}~\citep[although see][]{RomaEtal16},
-increasing endurance~\citep{WilmKnut03}, and more.  Exercise can also
+Engaging in physical activity (exercise) can improve physical
+fitness by increasing muscle strength \citep{RogeEvan93, Lind79,
+  CranEtal13, Knut07}, bone density~\citep{ChilEtal12,
+  BassRams94, LaynNels99}, cardiovascular
+performance~\citep{MaioEtal00, PollEtal00}, lung
+capacity~\citep[][although see \cite{RomaEtal16}]{LazoEtal16},
+endurance~\citep{WilmKnut03}, and more.  Exercise can also
 improve mental health~\citep{Ragl90, MikkEtal17, TaylEtal85,
   DeslEtal09, Call04, PaluSchw00, BassSuzu17} and cognitive performance~\citep{ChanEtal12b,
   BrisEtal02, EtniEtal06, BassSuzu17}.
@@ -109,31 +112,33 @@ have different, quantifiable impacts on cognitive performance and
 mental health, and that (b) these impacts will be consistant across
 individuals.  To this end, we collected a year of fitness tracking
 data from each of 113 participants.  We then asked each participant to
-fill out a brief survey in which they self-evaluated several aspects
+fill out a brief survey in which they self-evaluated and self-reported
+several aspects
 of their mental health.  Finally, we ran each participant through a
 battery of memory tasks, which we used to evaluate their memory
-performance along several dimensions.  We examined the data for
+performance along several dimensions.  We searched the data for
 potential associations between memory, mental health, and exercise.
 
  \section*{Methods}
 
-    We ran an online experiment using the Amazon Mechanical Turk
-    platform.  We collected data about each participant's fitness and
+    We ran an online experiment using the Amazon Mechanical Turk (MTurk)
+    platform~\citep{GureEtal16}.  We collected data about each participant's fitness and
     exercise habits, a variety of self-reported measures concerning their
     mental health, and about their performance on a battery of memory
-    tasks.  We mined the dataset for potential associations between
-    memory, mental health, and exercise.
+    tasks.
 
     
     
 \subsection*{Experiment}
 \subsubsection*{Participants}
 We recruited experimental participants by posting our experiment as a
-Human Intelligence Task (HIT) on the Amazon Mechanical Turk platform.
-We limited participation to Mechanical Turk Workers who had been
-assigned a ``Masters'' designation on the platform, given to workers
+Human Intelligence Task (HIT) on the MTurk platform.
+We limited participation to MTurk Workers who had been
+assigned a ``master worker'' designation on the platform, given to workers
 who score highly across several metrics on a large number of HITs,
-according to a proprietary algorithm managed by Amazon.  We further
+according to a proprietary algorithm managed by Amazon.  One criteria
+embedded into the algorithm is a requirement that master
+workers must maintain a HIT acceptance rate of at least 95\%.  We further
 limited our participant pool to participants who self-reported that
 they were fluent in English and regularly used a Fitbit fitness
 tracker device.  A total of 160 workers accepted our HIT in order to
@@ -174,7 +179,7 @@ percentile: 3).
 \paragraph{Reported medical conditions and medications.}
 Participants reported having and/or taking medications pertaining to the following medical conditions: anxiety or
 depression (4 participants), recent head injury (2 participants), high
-blood pressure (1 participant), bipolar (1 participant),
+blood pressure (1 participant), bipolar disorder (1 participant),
 hypothyroidism (1 participant), and other unspecified conditions or medications (1
 participant).  Participants reported their current and typical stress
 levels on a Likert scale as very relaxed (-2), a little relaxed (-1),
@@ -219,13 +224,13 @@ percentile: 2).
 
 
 \subsubsection*{Tasks}
-Upon accepting the HIT posted on Mechanical Turk, each worker was
+Upon accepting the HIT posted on MTurk, each worker was
 directed to read and fill out a screening and consent form, and to
 share access to their anonymized Fitbit data via their Fitbit account.
-After consenting to participate in our stidy and successfully sharing their Fitbit
+After consenting to participate in our study and successfully sharing their Fitbit
 data, participants filled out a survey and then engaged in a series of
 memory tasks (Fig.~\ref{fig:tasks}).  All stimuli and code for running
-the full Mechanical Turk experiment may be found
+the full MTurk experiment may be found
 \href{https://github.com/ContextLab/brainfit-task}{\underline{here}}.
 
 \begin{figure}[tp]
@@ -289,7 +294,6 @@ lists reported by \cite{ZimaEtal18}.  Each participant was assigned
 four unique randomly chosen lists (in a randomized order), selected
 from a full set of 16 lists.  Each chosen list was then randomly
 shuffled before presenting the words to the participants.
-
 Participants also performed a final delayed memory test where they
 were given 180~s to type out any words they remembered from
 \textit{any} of the 4 lists they had studied.
@@ -313,7 +317,7 @@ Participants watched a 2.5~minute video clip entitled ``The Temple of
 Knowledge.''  The video comprises an animated story told to StoryCorps
 by Ronald Clark, who was interviewed by his daughter, Jamilah Clark.
 The narrator (Ronald) discusses growing up living in an apartment over
-Washington Heights branch of the New York Public Library, where his
+the Washington Heights branch of the New York Public Library, where his
 father worked as a custodian during the 1940s.
 
 After watching the video clip, participants were asked to type out
@@ -325,18 +329,15 @@ participant pressed the return key or typed any final punctuation mark
 cleared to prevent further editing of any already-submitted text.
 This was intended to prevent participants from retroactively editing
 their previous responses.  Participants were given up to 10~minutes to
-enter their responses.  After 4~minutes participants were given the
+enter their responses.  After 4~minutes, participants were given the
 option of ending the response period early, e.g., if they felt they
 had finished entering all of the information they remembered.  Each
 participant's transcript was constructed from their submitted
 responses by combining the sentences into a single document and
-removing extraneous whitespace characters.
-
-Following this 4--10 minute free response period, participants were
-given a series of 10 multiple choice questions about the conceptual
-content of the story.  All participants received the same questions,
-in the same order.
-
+removing extraneous whitespace characters.  Following this 4--10
+minute free response period, participants were given a series of 10
+multiple choice questions about the conceptual content of the story.
+All participants received the same questions, in the same order.
 Participants also performed a final delayed memory test, where they
 carried out the free response recall task a second time, near the end
 of the testing session.  This resulted in a second transcript, for
@@ -346,7 +347,7 @@ each participant.
 Participants studied a series of 10 English-Gaelic word pairs in a
 randomized order.  We selected the Gaelic language both for its
 relatively small number of native speakers and for its dissimilarity
-to other commonly spoken languages amongst Mechanical Turk Workers.
+to other commonly spoken languages amongst MTurk workers.
 We verified (via self report) that all of our participants were fluent
 in English and that they were neither fluent nor familiar with Gaelic.
 
@@ -409,18 +410,15 @@ GPS coordinates, etc.) prior to importing their data.
 
 The fitness tracking data associated with participants' Fitbit
 accounts varied in scope and duration according to which device the
-participant owned (Fig.~\devices), how often the participant
-wore (and/or synced) their tracking device, and how long they had
-owned their device.  For example, while all participants' devices
-supported basic activity metrics such as daily step counts, only a
-subset of the devices with heart rate monitoring capabilities provided
-information about workout intensity, resting heart rate, and other
-related measures.
-
-
-Across all devices, we collected the following information: heart rate
-data, sleep tracking data, logged bodyweight measurements, logged
-nutrition measurements, Fitbit account and device settings, and
+participant owned (Fig.~\devices), how often the participant wore
+(and/or synced) their tracking device, and how long they had owned
+their device.  For example, while all participants' devices supported
+basic activity metrics such as daily step counts, only a subset of the
+devices with heart rate monitoring capabilities provided information
+about workout intensity, resting heart rate, and other related
+measures.  Across all devices, we collected the following information:
+heart rate data, sleep tracking data, logged bodyweight measurements,
+logged nutrition measurements, Fitbit account and device settings, and
 activity metrics.
 
 \paragraph{Heart rate.}  If available, we extracted all heart rate
@@ -452,7 +450,7 @@ nutrition-related information affiliated with participants' Fitbit
 accounts within 1 year prior to enrolling in our study. Depending on
 their specific account settings and usage behaviors, this included a
 log of the specific foods they had eaten (and logged) over the past
-year, and the amount of water consumed each day.
+year, and the amount of water consumed (and logged) each day.
 
 \paragraph{Account and device settings.}  We extracted any settings
 associated with participants' Fitbit accounts to determine (a) which
@@ -484,11 +482,10 @@ metrics, relative to a baseline:
 where $m(i)$ is the value of metric $m$ from $i - 1$ days prior to
 testing (e.g., $m(1)$ represents the value of $m$ on the day the
 participant accepted the HIT, and $m(10)$ represents the value of $m$
-9 days prior to accepting the HIT.  Unless otherwise noted, we set
-$R = 7$ and $B = 30$.  In other words, to estimate recent changes in
-any metric $m$, we divided the average value of $m$ taken over the
-prior week by the average value of $m$ taken over the 30 days before
-that.
+9 days prior to accepting the HIT.  We set $R = 7$ and $B = 30$.  In
+other words, to estimate recent changes in any metric $m$, we divided
+the average value of $m$ taken over the prior week by the average
+value of $m$ taken over the 30 days before that.
 
 
 \subsubsection*{Exploratory correlation analyses}
@@ -501,11 +498,11 @@ row per sampled participant and one column for each measured variable.
 When participants were sampled multiple times in a given iteration, as
 was often the case, this matrix contained duplicate rows.  Next, we computed the Pearson's correlation
 between each pair of columns.  This yielded, for each pair of columns,
-a distribution of $N$ bootstrapped correlation coefficients.  If fewer
-than $97.5\%$ of the coefficients for a given pair of columns had the
+a distribution of $N$ bootstrapped correlation coefficients.  If
+$97.5\%$ or fewer of the coefficients for a given pair of columns had the
 same sign, we excluded the pair from further analysis and considered
 the expected correlation between those columns to be undefined.  If
-$\geq 97.5\%$ of the coefficients for a given pair of columns had the
+$> 97.5\%$ of the coefficients for a given pair of columns had the
 same sign (corresponding to a bootstrap-estimated two-tailed $p$
 threshold of 0.05), we computed the expected correlation coefficient as:
 \[
@@ -519,7 +516,7 @@ for these correlations as one minus the proportion of bootstrapped
 correlations with the same sign, multiplied by two.
 
 \subsubsection*{Reverse correlation analyses}
-We sought to characterize potential associations between the history
+We sought to characterize potential associations between the \textit{dynamics}
 of participants' fitness-related activities leading up to the time
 they participated in a memory task and their performance on the given
 task.  For each fitness-related variable, we constructed a timeseries
@@ -574,26 +571,24 @@ where
 Here, $\epsilon$ provides a lower bound on the influence of the
 lowest-weighted participant's data.  We defined $\epsilon = 0.001$,
 ensuring that the lowest-weighted participant had relatively low (but
-non-zero) influence.
-
-We computed the weighted standard error of the mean as:
+non-zero) influence.  We computed the weighted standard error of the
+mean as:
 \[
 \mathrm{SEM}_m\left(f(t)\right) = \frac{\left| \sum_{s=1}^S \left( F(t, s) -
     \bar{f}(t)\right) \right|}{\sqrt{S}}.
 \]
-
 When a given row of $F$ was missing data from one or more
 participants, those participants were excluded from the weighted
 average for the corresponding timepoint and the weights (across all
 remaining participants) were re-normalized to sum to 1.  The above
-procedure yielded, for each memory variable, a timeseries of average
-(and standard error of the mean) fitness tracking values leading up to
-the day of the experiment.
+procedure yielded, for each memory variable, a timeseries of weighted
+average (and weighted standard error of the mean) fitness tracking
+values leading up to the day of the experiment.
 
 \section*{Results}
-Before testing our main hypothesis we examined the behavioral data
+Before testing our main hypotheses, we examined the behavioral data
 from each of four memory tasks: a random word list learning ``free
-recall'' task; a naturalistic recall task whereby participants watched
+recall'' task (Fig.~\ref{fig:tasks}); a naturalistic recall task whereby participants watched
 a short video and then recounted the narrative; a foreign language
 ``flashcards'' task; and a spatial learning task.  Each of the first
 three tasks (free recall, naturalistic recall, and the flashcards
@@ -661,7 +656,7 @@ additional details.  \textbf{c. Foreign language
   flashcards.} Each bar denotes the average proportion of correctly
 recalled Gaelic-English word pairs from early (first 3), late (last
 3), or all (i.e., all 10) study positions.  See
-Figure~\vocabDetail~for additional details.\textbf{d. Spatial
+Figure~\vocabDetail~for additional details.  \textbf{d. Spatial
   learning.}  Average estimation error in shape locations as a
 function of the number of shapes.  See Figure~\spatialDetail~for
 additional details.  All panels: error bars and error
@@ -702,7 +697,7 @@ participants' fitness and activity metrics
 (Fig.~\ref{fig:fitness_summary}).  We examined recent measurements,
 averaged over the week prior to testing
 (Fig.~\ref{fig:fitness_summary}a), baselined measurements (average
-over the prior week, divided by the average over the preceding 30 day;
+over the prior week, divided by the average over the preceding 30 days;
 Fig.~\ref{fig:fitness_summary}b), along with more gradually varying
 measures that tended to remain relatively static over timescales of
 weeks to months (Fig.~\ref{fig:fitness_summary}c).
@@ -756,14 +751,14 @@ example, body mass index (BMI) and weight were correlated
 the prior week was negatively correlated with recent
 low-to-moderate-intensity (``fat burn'') cardiovascular
 activity levels ($r = 0.70, p = 0.0004$).
-Participants' peak heart rate (averaged over the prior week) were also
+Participants' peak heart rates (averaged over the prior week) were also
 negatively correlated with recent increases in step counts and daily
 elevation gains ($r\mathrm{s} < -0.26, p\mathrm{s} < 0.03$), where recent changes were defined as the average values
 over the seven days leading up to the test day divided by the average
-values over the preceding 30 days.  Although several demographic
+values over the preceding 30 days.  Several demographic
 attributes (Fig.~\demDemCorr) displayed trivial correlations (e.g.,
 participants identifying as male never reported identifying as female,
-and so on), we also observed a negative correlation between reported
+and so on).  We also observed a negative correlation between reported
 stress and alertness ($r = -0.44, p < 0.0001$), and
 positive correlations between the reported clarity of the instructions for all
 tasks ($r\mathrm{s} > 0.26, p\mathrm{s} < 0.02$).
@@ -797,11 +792,12 @@ demographic measures and their behaviors in different tasks
 low-to-moderate-intensity (``fat burn'') 
 cardiovascular activity was positively
 correlated with immediate ($r = 0.38, p = 0.03$) and delayed ($r =
-0.38, p = 0.029$) recall on the naturalistic
+0.38, p = 0.029$) recall performance on the naturalistic
 memory task.  Recent increases in moderate-intensity (``cardio'')
 activity over the prior 7 days (relative to the preceding 30 days) was
-also positively correlated with immediate naturalistic recall ($r =
-0.48, p = 0.003$) and immediate recall on the foreign language
+also positively correlated with immediate naturalistic recall
+performance ($r =
+0.48, p = 0.003$) and immediate recall performance on the foreign language
 flashcards task ($r = 0.43, p = 0.048$).  Recent high-intensity
 (``peak'') activity was positively correlated with performance on the
 spatial learning task ($r = 0.34, p < 0.0001$), as were recent increases
@@ -825,17 +821,24 @@ foreign language flashcards task ($r = 0.11, p < 0.0001$).
   (baseline) timecourses display the (unweighted) average across all
   participants.  \textbf{b. Daily duration (in minutes) of low-intensity physical
     activity.}  Timecourses are displayed in the same format and color
-scheme as those in Panel A.  \textbf{c. Timecourses of physical
+scheme as those in Panel A.  Analogous timecourses for additional
+fitness-related measures may be found in Figures~\activityTimecourse,
+\cardioTimecourse, and \sleepTimecourse.  \textbf{c. Timecourses of physical
   activity, weighted by mental health measures.}  The timecourses in
 each panel display the average daily step counts (top panel) or
-duration of low-intensity activity (bottom panel).  Each color denotes
-the average timecourse for all participants with the indicated
-mental health conditions.  The baseline curves (black) display the
+duration of low-intensity activity (bottom panel).  The colored lines
+show average activity dynamics weighted by self-reported stress levels
+at the start of the experiment (purple) and self-reported ``typical''
+stress levels (pink).  The baseline curves (black) display the
 average across all participants (re-plotted in Panel C to illustrate
-scale differences across panels).  Error ribbons in all panels denote
+scale differences across panels).  Timecourses for additional mental
+health-related and fitness-related measures may be found in
+Figures~\activityTimecourseMH, \cardioTimecourseMH, and \sleepTimecourseMH. Error ribbons in all panels denote
 the standard error of the mean.  Horizontal lines below each panel's
 timecourses denote intervals over which each weighted measure (color) differs
-from the unweighted baseline.}
+from the unweighted baseline (via a paired sample two-sided $t$-test
+of the weighted mean values for each measure within a 30 day window around each timepoint; horizontal lines denote $p <
+0.05$, corrected.}
 \label{fig:dynamics}
 \end{figure}
 
@@ -845,8 +848,8 @@ mental health measures.  Although the analyses treated these measures
 on average or in aggregate, many of the measures we collected are
 dynamic. For example, the amount or intensity of physical exercise
 people engage in can vary over time, and so on.  We wondered whether
-the dynamics of fitness-related measures might related to memory
-performance and mental health measures.  To this end, we carried out a
+the dynamics of fitness-related measures might relate to memory
+performance and/or mental health measures.  To this end, we carried out a
 series of reverse correlation analyses (see \textit{Reverse
   correlation analyses}) to examine whether participants with
 different cognitive or mental health profiles also tended to display
@@ -879,11 +882,11 @@ in the dynamics of physical health measures.
 
 
 \section*{Discussion}
-After collecting a year's worth of fitness-tracking data from 113
+After collecting a year's worth of fitness-tracking data from each of 113
 participants, we ran each participant in a battery of memory tasks and
 had them fill out a series of demographic and mental health-related
 questions.  We found that the associations between fitness-related
-activities, memory performance, and mental health are heterogeneous.
+activities, memory performance, and mental health were heterogeneous.
 Our results suggest that engagement in particular physical
 activities (e.g., differing in time relative to the
 test day, intensity, duration, etc.) is also reflected in participants'
@@ -907,7 +910,7 @@ correlations and associations, rather than to imply knowledge about a causal dir
 of our findings.
 
 Although the present study cannot reveal causal effects, a large prior
-literature provided some insight into potential causal effects by examining the neural and cognitive effects of a variety
+literature provides some insight into potential causal effects by examining the neural and cognitive effects of a variety
 of exercise interventions~\citep{ChanEtal15, VidoEtal15, KamiEtal07,
   ImboEtal19, SuwaEtal17, SinhEtal21, Tomp03}.  A limitation of that
 prior work is that most of these studies examine how relatively
@@ -952,7 +955,8 @@ All analysis code and data used in the present manuscript may be found
 
 \section*{Author contributions}
 Concept: J.R.M.  Experiment implementation and data collection: G.M.N.
-Analyses: G.M.N., E.C., P.C.F., and J.R.M.  Writing: J.R.M.
+Analyses: G.M.N., E.C., P.C.F., and J.R.M.  Writing: J.R.M. with input
+from all authors.
 
 \section*{Competing interests}
 The authors declare no competing interests.
