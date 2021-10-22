@@ -40,6 +40,7 @@ This package requires Docker (v3) to run. Installation instructions may be found
 
 Our main analysis code is organized into the following Jupyter (.ipynb) notebooks:
 ```yaml
+code
 ├── demographics.ipynb: generate Figure S1 and summarize participant demographics
 ├── behavioral_data.ipynb: generate Figures 2, 3, S2, S3, S4, and S5
 ├── fitness_data.ipynb: generate Figures 4, S6, S7, S8, S9, and S10
