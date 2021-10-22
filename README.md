@@ -18,6 +18,8 @@ root
 │   └── sandbox_screenrecording_062618.mov
 ```
 
+Note that compiling the PDFs for the main text and supplement will require you to set up the [Contextual Dynamic Laboratory's Bibliography Management Tool](https://github.com/ContextLab/CDL-bibliography).
+
 ## Running our code
 
 To run the included code, used for the analyses presented in our paper, please follow the instructions below.  Note: we've been inconsistent with our internal naming systems for this project; at different points in the project's development and implementation, we have referred to it as FitBrain, BrainFit, and/or FitWit.
