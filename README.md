@@ -1,6 +1,6 @@
 # Fitness tracking reveals task-specific associations between memory, mental health, and exercise
 
-This repository contains data and code used to produce the paper "[Fitness tracking reveals task-specific associations between memory, mental health, and exercise]()" by Jeremy R. Manning, Gina M. Notaro, Esme Chen, and Paxton C. Fitzpatrick.
+This repository contains data and code used to produce the paper "[Fitness tracking reveals task-specific associations between memory, mental health, and exercise](https://www.biorxiv.org/content/10.1101/2021.10.22.465441v1)" by Jeremy R. Manning, Gina M. Notaro, Esme Chen, and Paxton C. Fitzpatrick.
 
 Additional information on this project can be found [here](https://github.com/ContextLab/brainfit-task). The exact version of the experiment used to acquire our dataset via Amazon Mechanical Turk (sans credentials in `config.txt` and `credentials.json`) may be found [here](https://github.com/ContextLab/brainfit-task/tree/9541c6678ddb1c8da7395ec76869ad97ee1d0dd2).
 
