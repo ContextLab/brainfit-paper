@@ -1,0 +1,70 @@
+\title{cover letter}
+%
+% See http://texblog.org/2013/11/11/latexs-alternative-letter-class-newlfm/
+% and http://www.ctan.org/tex-archive/macros/latex/contrib/newlfm
+% for more information.
+%
+\documentclass[11pt,stdletter,orderfromtodate,sigleft]{newlfm}
+\usepackage{hyperref, pxfonts, geometry}
+
+  \setlength{\voffset}{0in}
+
+\newlfmP{dateskipbefore=0pt}
+\newlfmP{sigsize=20pt}
+\newlfmP{sigskipbefore=10pt}
+ 
+\newlfmP{Headlinewd=0pt,Footlinewd=0pt}
+ 
+\namefrom{\vspace{-0.3in}Jeremy R. Manning}
+\addrfrom{
+	Dartmouth College\\
+    %Department of Psychological \& Brain Sciences\\
+    %HB 6207 Moore Hall\\
+	Hanover, NH  03755}
+ 
+\addrto{}
+\dateset{\today}
+ 
+\greetto{To the editors of \textit{Scientific Reports}:}
+
+
+ 
+\closeline{Sincerely,}
+%\usepackage{setspace}
+%\linespread{0.85}
+% How will your work make others in the field think differently and move the field forward?
+% How does your work relate to the current literature on the topic?
+% Who do you consider to be the most relevant audience for this work?
+% Have you made clear in the letter what the work has and has not achieved?
+
+\begin{document}
+\begin{newlfm}
+We have enclosed our manuscript entitled \textit{Fitness tracking
+  reveals task-specific associations between memory, mental health,
+  and exercise} to be considered for publication in \textit{Scientific
+  Reports}.  The manuscript reports new evidence that, just as different
+forms of exercise affect \textit{physical} health in different ways,
+different forms of exercise also affect cognitive performance and
+mental health differently.
+
+In our study, we collected a year of fitness tracking data from each
+of 113 participants.  We also had the participants fill out surveys
+asking them to self-report on different aspects of their mental
+health, and to engage in a battery of memory tasks that assessed their
+short and long term episodic, semantic, and spatial memory
+performance.  We found that participants with similar exercise habits
+and fitness profiles tended to also exhibit similar mental health and
+memory performance profiles.  We view the study as laying a foundation
+for future exercise interventions that target specific aspects of
+cognitive performance and mental health.
+
+
+We expect that this article will be of interest to researchers in a
+broad range of areas, including fitness, memory, and mental health.
+
+Thank you for considering our manuscript, and we hope you will find it
+suitable for publication in \textit{Scientific Reports}.
+
+
+\end{newlfm}
+\end{document}

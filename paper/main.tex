@@ -1,7 +1,7 @@
 \documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
-\usepackage[sort]{natbib}
+\usepackage[sort, numbers]{natbib}
 \usepackage{pxfonts}
 \usepackage{graphicx}
 \usepackage{setspace}
@@ -151,11 +151,15 @@ operating system), or who ended their participation prematurely,
 before completing the full study.  In all, 113 participants
 contributed usable data to the study.
 
-For their participation, workers received a base payment of \$5 per hour (computed in 15
-minute increments, rounded up to the nearest 15 minutes), plus an
-additional performance-based bonus of up to \$5.  Our recruitment
-procedure and study protocol
-were approved by Dartmouth's Committee for the Protection of Human Subjects.
+For their participation, workers received a base payment of \$5 per
+hour (computed in 15 minute increments, rounded up to the nearest 15
+minutes), plus an additional performance-based bonus of up to \$5.
+Our recruitment procedure and study protocol were approved by
+Dartmouth's Committee for the Protection of Human Subjects.  We
+obtained informed consent using an online form administered to all
+prospective participants prior to enrolling them in our study.  All
+methods were performed in accordance with the relevant guidelines and
+regulations.
 
 \paragraph{Gender, age, and race.}
 Of the 113 participants who contributed usable data, 77 reported their gender as female, 35 as
@@ -726,17 +730,32 @@ more information see Figures~\fitDists, \fitDistgridImmediate,
 We wondered about potential links between the different aspects of
 participants' data.  For example, if people who exercised in a
 particular way also tended to perform better on a given memory task,
-this could suggest that either (a) some property intrinsic to participants who
-exercised in a particular way might also affect their memory
-performance on the given task, and/or (b) particular exercise behaviors
-could have a causal impact on memory performance.  We carried out an
-exploratory analysis whereby we used a bootstrap-based approach (see
-\textit{Exploratory correlation analyses}) to
-identify reliable correlations between different aspects of memory
-performance (Fig.~\behBehCorr), different aspects of fitness (Fig.~\fitFitCorr), different demographic
-attributes (Fig.~\demDemCorr), and correlations between memory
-performance, fitness information, and demographic attributes
-(Fig.~\allCorr).  Several patterns emerged.  First, we found that
+this could suggest that either (a) some property intrinsic to
+participants who exercised in a particular way might also affect their
+memory performance on the given task, and/or (b) particular exercise
+behaviors could have a causal impact on memory performance.  We
+carried out an exploratory analysis whereby we used a bootstrap-based
+approach to identify reliable correlations between different aspects
+of memory performance (Fig.~\behBehCorr), different aspects of fitness
+(Fig.~\fitFitCorr), different demographic attributes
+(Fig.~\demDemCorr), and correlations between memory performance,
+fitness information, and demographic attributes (Fig.~\allCorr).
+Specifically, we sought to identify correlations that were present in
+the same direction (i.e., positive or negative) across different
+subsets of participants.  For each test, we report the average correlation (taken
+across 10,000 subsets of participants, chosen with replacement) and
+an associated two-tailed $p$-value, estimated as
+\[
+p = 2 \times (1 - q),
+\]
+where $q$ is the proportion of those
+10,000 subsets that exhibited correlations in the same direction  (see
+\textit{Exploratory correlation analyses}).  When all 10,000 randomly
+chosen subsets of participants exhibited correlations in the same
+direction (i.e., all positive correlations or all negative
+correlations), we report the $p$-value as $p < 0.0001$.
+
+Several patterns emerged from these analyses.  First, we found that
 participants' performance on the (within-task) immediate versus delayed memory tests
 from the free recall, naturalistic recall, and foreign language
 flashcards tasks were positively correlated ($r$s $> 0.25$, $p$s $< 0.003$).  This suggests that, within each of these tasks,
@@ -942,12 +961,12 @@ and mental health.
 We acknowledge useful discussions with David Bucci, Emily Glasser,
 Andrew Heusser, Abigail Bartolome, Lorie Loeb, Lucy Owen, and Kirsten
 Ziman.  Our work was supported in part by the Dartmouth Young Minds
-and Brains initiative.  The content is solely the responsibility of
-the authors and does not necessarily represent the official views of
-our supporting organizations.  This paper is dedicated to the memory
-of David Bucci, who helped to inspire the theoretical foundations of
-this work.  Dave served as a mentor and colleague on the project prior
-to his passing.
+and Brains initiative, and by NSF grant number 2145172 to J.R.M.  The
+content is solely the responsibility of the authors and does not
+necessarily represent the official views of our supporting
+organizations.  This paper is dedicated to the memory of David Bucci,
+who helped to inspire the theoretical foundations of this work.  Dave
+served as a mentor and colleague on the project prior to his passing.
 
 
 \section*{Data and code availability}
