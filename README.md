@@ -29,11 +29,11 @@ To run the included code, used for the analyses presented in our paper, please f
 This package requires Docker (v3) to run. Installation instructions may be found [here](https://docs.docker.com/install/).
 
 1. Clone this repository to your computer
-   `git clone https://github.com/ContextLab/fitbrain-analysis.git`
+   `git clone https://github.com/ContextLab/brainfit-paper.git`
 2. Build an image from the provided `Dockerfile` (from your local repository directory):
-   - `docker build -t fitbrain-analyses .`
+   - `docker build -t brainfit-analyses .`
 3. Run a container instance from the image, publishing port `8888` and mounting the repository as a volume to access the notebooks. The Jupyter Notebook server will start automatically
-  - `docker run --rm -it -p 8888:8888 -v $PWD:/mnt fitbrain`
+  - `docker run --rm -it -p 8888:8888 -v $PWD:/mnt brainfit`
 4. Copy the **third** link that appears and paste it into a web browser.
 
 ### Running the analyses from the paper
