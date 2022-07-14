@@ -29,6 +29,7 @@ import brainiak.eventseg.event as event
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 
+nltk.download('omw-1.4')
 
 def load_raw():
     datadir = os.path.join(DATA_DIR, 'raw_formatted')

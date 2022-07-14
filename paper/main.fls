@@ -270,6 +270,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/pxex.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/pxsy.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/pxsyb.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/rpxb.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/rpxi.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/rpxmi.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/rpxr.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
