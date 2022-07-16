@@ -57,5 +57,6 @@
     ],
     "latex-workshop.latex.texDirs": [
         "/home/jeremy/CDL-bibliography/"
-    ]
+    ],
+    "ltex.additionalRules.motherTongue": "en-US"
 }
